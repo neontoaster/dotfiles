@@ -8,11 +8,9 @@ new_window normal 0 px
 new_float normal 0 px
 for_window [class="^.*"] border pixel 0
 
-
 ### border color ###
 client.background       #3f4551
 client.focused          #708EA0 #668AA0 #85AEC6
-
 
 ### launcher dmenu ###
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
