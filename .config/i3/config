@@ -8,12 +8,15 @@ new_window normal 0 px
 new_float normal 0 px
 for_window [class="^.*"] border pixel 0
 
+
 ### border color ###
 client.background       #3f4551
 client.focused          #708EA0 #668AA0 #85AEC6
 
+
 ### launcher dmenu ###
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
 
 
 bar 
@@ -199,11 +202,14 @@ exec --no-startup-id xcompmgr -c -f -n
 exec --no-startup-id megasync
 exec --no-startup-id keepassxc
 exec --no-startup-id redshift
-#exec --no-startup-id xautolock -time 1 -locker "exec $Locker"
-exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
 exec --no-startup-id /usr/lib/notification-daemon/notification-daemon
 exec --no-startup-id unclutter
 exec --no-startup-id nm-applet
+
+### autolock ###
+#exec --no-startup-id xautolock -time 1 -locker "exec $Locker"
+exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
+exec --no-startup-id xss-lock -- "$Locker"
 
 #assign [class="Rhythmbox"] $w0
 

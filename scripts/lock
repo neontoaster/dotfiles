@@ -2,7 +2,7 @@
 
 IMAGE=/tmp/i3lock.png
 TEXT="locked"
-LOCK=lock.png
+LOCK=/usr/local/share/lock.png
 RES=$(xrandr --current | grep '*' | uniq | awk '{print $1}')
 ffmpeg -f x11grab -video_size $RES -y -i $DISPLAY -i $LOCK -filter_complex "eq=brightness=-0.05,boxblur=5,overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2" -vframes 1 $IMAGE -loglevel quiet
 
