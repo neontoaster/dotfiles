@@ -6,7 +6,7 @@ bindsym $mod+Return exec urxvt
 ### borders style ###
 new_window normal 0 px
 new_float normal 0 px
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 
 
 ### border color ###
@@ -104,12 +104,6 @@ bindsym Mod1+8 move container to workspace $workspace8
 bindsym Mod1+9 move container to workspace $workspace9
 bindsym Mod1+0 move container to workspace $workspace10
 
-### floating window ###
-for_window [class="chromium"] enable border pixel 1
-for_window [class="URxvt"] floating enable border pixel 4
-for_window [class="Vlc"] floating enable border pixel 4
-for_window [class="XTerm"] floating enable border pixel 4
-
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -140,34 +134,21 @@ bindsym $mod+shift+Right move right
 bindsym $mod+shift+space floating toggle
 bindsym $mod+f fullscreen
 
+### locking ###
+#set $Locker /usr/local/share/lock
+set $Locker gnome-screensaver-command -l
+bindsym $mod+l exec --no-startup-id $Locker
+#exec --no-startup-id xautolock -time 5 -locker "$Locker"
+exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
+exec --no-startup-id xss-lock -- "$Locker"
 
-### out system ###
-
-set $Locker /usr/local/share/lock
-set $mode_system System:   L :  | S :  | P :  | R :  | E : 
-
-mode "$mode_system" {
-    bindsym l exec --no-startup-id $Locker, mode "default"
-    bindsym s exec --no-startup-id "$Locker; systemctl suspend", mode "default
-    bindsym p exec --no-startup-id systemctl poweroff -i, mode "default"
-    bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym e exec --no-startup-id i3-msg exit, mode "default"
-
-#   back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-bindsym $mod+x mode "$mode_system"
-
-
-### volume ###
+### volume control ###
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 #bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 #bindsym XF86AudioMute exec amixer -q set Master toggle
-
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5
@@ -177,26 +158,22 @@ bindsym XF86MonBrightnessDown exec light -U 5
 exec /bin/bash /usr/local/share/settouchpadsettings
 bindsym XF86TouchpadToggle exec /bin/bash /usr/local/share/toggletouchpad
 
-
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-
-# Keyboard backlight
+# Keyboard backlight control
 bindsym XF86KbdBrightnessUp exec /usr/local/bin/kb-light.py + 1
 bindsym XF86KbdBrightnessDown exec /usr/local/bin/kb-light.py - 1
 #bindsym XF86KbdBrightnessUp exec /bin/bash /usr/local/share/kbd_backlight up
 #bindsym XF86KbdBrightnessDown exec /bin/bash /usr/local/share/kbd_backlight down
 
-### autostart ###
-
+### autostart programs ###
 #exec_always --no-startup-id compton --config ~/.config/compton/compton.conf -b
 exec --no-startup-id feh --bg-scale /home/void/wallpaper.png
 exec --no-startup-id mpd
-#exec --no-startup-id albert
 exec --no-startup-id dmenu --daemon
 exec --no-startup-id xcompmgr -c -f -n 
 exec --no-startup-id megasync
@@ -205,31 +182,33 @@ exec --no-startup-id redshift
 exec --no-startup-id /usr/lib/notification-daemon/notification-daemon
 exec --no-startup-id unclutter
 exec --no-startup-id nm-applet
+exec --no-startup-id xrdb ~/.Xresources
+exec --no-startup-id xfce4-power-manager
 
-### autolock ###
-#exec --no-startup-id xautolock -time 1 -locker "exec $Locker"
-exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
-exec --no-startup-id xss-lock -- "$Locker"
+### automount ###
+exec --no-startup-id mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/music /home/void/Documents/music
 
-#assign [class="Rhythmbox"] $w0
-
-for_window [class="Eog"] floating enable
+### preconfigured windows ####
+for_window [class="Firefox"] move workspace $workspace2; workspace $workspace2
+for_window [class="Sublime"] move workspace $workspace3; workspace $workspace3
+for_window [class="Spotify"] move workspace $workspace4; workspace $workspace4
+for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px
 for_window [class="Lxappearance"] floating enable
+for_window [class="chromium"] enable border pixel 1
+for_window [class="URxvt"] floating enable border pixel 5
+for_window [class="Vlc"] floating enable border pixel 4
+for_window [class="XTerm"] floating enable border pixel 4
 
-### i3-gaps stuff ###
+### Hotkeys for programs ###
+bindsym $mod+x exec firefox
+bindsym $mod+c exec spotify
 
-# Necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 3
-
-# Smart Gaps
-smart_gaps on
-
-# Smart Borders
+#smart_gaps on
 smart_borders on
 
 # Set inner/outer gaps
 gaps inner 20
-gaps outer 20
+gaps outer 0
 
 # Gaps mode
 set $mode_gaps Gaps: (o) outer, (i) inner
