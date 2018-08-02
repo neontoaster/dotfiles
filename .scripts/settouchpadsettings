@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read TPdevice <<< $( xinput | sed -nre '/Touchpad/s/.*id=([0-9]*).*/\1/p' )
+
+xinput set-prop	$TPdevice 279 1
+xinput set-prop	$TPdevice 297 1

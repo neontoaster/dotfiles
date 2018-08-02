@@ -1,58 +1,78 @@
+### essential assignments ###
+font pango:DejaVu Sans Mono for Powerline, FontAwesome 10
 set $mod Mod4
-font pango:monospace 8, FontAwesome 8
 floating_modifier $mod
-bindsym $mod+Return exec urxvt
 
-### borders style ###
-new_window normal 0 px
-new_float normal 0 px
-for_window [class="^.*"] border pixel 3
-
-
-### border color ###
-client.background       #3f4551
-client.focused          #708EA0 #668AA0 #85AEC6
-
-
-### launcher dmenu ###
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+### global hotkeys ###
+bindsym $mod+Return         exec --no-startup-id urxvt
+bindsym $mod+Shift+Return   exec --no-startup-id "urxvt -T floatingterm"
+bindsym $mod+d              exec --no-startup-id i3-dmenu-desktop
+bindsym F1                  '' > /dev/null                                  # unbind F1 because it's useless
+bindsym $mod+F1             exec lxappearance
+bindsym $mod+Shift+C        reload
+bindsym $mod+Shift+R        restart
+bindsym $mod+q              kill
 
 
+### Colors ###
+exec --no-startup-id xrdb ~/.Xresources     # make sure ressources are loaded
+set $darkblack      #1b1918
+set $black          #766e6b
+set $darkred        #f22c40
+set $red            #f22c40
+set $darkgreen      #5ab738
+set $green          #5ab738
+set $darkyellow     #d5911a
+set $yellow         #d5911a
+set $darkblue       #407ee7
+set $blue           #407ee7
+set $darkmagenta    #6666ea
+set $magenta        #6666ea
+set $darkcyan       #00ad9c
+set $cyan           #00ad9c
+set $darkwhite      #a8a19f
+set $white          #a8a19f
+set $brightwhite    #E6E5CA
+set $darkgrey       #2F3032
+set $transparent    #00000000
 
-bar 
-{
-	font pango:FontAwesome 8
-	separator_symbol " "
-	position top
-	status_command i3status -c ~/.config/i3/i3status.conf
+client.background       $black
+client.focused          $red            $red        $magenta    $darkmagenta    $darkblue
+client.unfocused        $transparent    $blue       $white      $darkblue       $darkblack
+client.focused_inactive $transparent    $blue       $white      $darkblue       $darkblack
+client.urgent           $darkred        $darkred    $black      $darkred        $darkred
 
-	colors 
-	{
-		background #2F333E
-		statusline #708EA0
-		separator #708EA0
 
-		focused_workspace #000000 #3F4551 #ffffff
-		inactive_workspace #333333 #222222 #888888
-		urgent_workspace #aa0000 #990000 #ffffff
-	}
+### status bar ###
+bar {
+        status_command              i3blocks -c ~/.config/i3/i3blocks.conf
+        position                    top
+        mode                        dock
+        strip_workspace_numbers     yes
+        tray_output		            none
+        height                      25
+        font                        pango: xos4 Terminess Powerline, FontAwesome 9
+        separator_symbol            "::"
+        colors {
+            background              $darkblack
+            separator               $darkred
+            statusline              $brightwhite
 
+            # Indicators                border        backgr        text
+            focused_workspace       $transparent    $blue       $brightwhite
+            inactive_workspace      $transparent    $darkgrey   $brightwhite
+            urgent_workspace        $transparent    $darkred    $brightwhite
+       }
 }
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
 
+### resize windows ###
+#Hint: you can also use the mouse for that
+mode "resize" {
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym m resize grow width 5 px or 5 ppt
-
-        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 5 px or 5 ppt
         bindsym Down resize grow height 5 px or 5 ppt
         bindsym Up resize shrink height 5 px or 5 ppt
@@ -62,12 +82,10 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
 
-
-### set workspace variable ###
+### configure workspaces ###
 set $workspace1   "1:"
 set $workspace2   "2:"
 set $workspace3   "3:"
@@ -77,7 +95,7 @@ set $workspace6   "6:"
 set $workspace7   "7:"
 set $workspace8   "8:"
 set $workspace9   "9:"
-set $workspace10   "0:"
+set $workspace10   "10:"
 
 
 ### switch to workspace ###
@@ -92,6 +110,7 @@ bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
+
 ### move focused container to workspace ###
 bindsym Mod1+1 move container to workspace $workspace1
 bindsym Mod1+2 move container to workspace $workspace2
@@ -104,124 +123,156 @@ bindsym Mod1+8 move container to workspace $workspace8
 bindsym Mod1+9 move container to workspace $workspace9
 bindsym Mod1+0 move container to workspace $workspace10
 
+
+### focus windows ###
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-bindsym $mod+space focus mode_toggle
 
-bindsym $mod+F1 exec lxappearance
-
-bindsym $mod+Shift+C reload
-bindsym $mod+Shift+R restart
-
-bindsym $mod+a focus parent
-bindsym $mod+e layout toggle split
-bindsym $mod+g exec subl
-bindsym $mod+h split h
-bindsym $mod+n exec nautilus
-bindsym $mod+q kill
-bindsym $mod+s layout stacking
-bindsym $mod+v split v
-bindsym $mod+w layout tabbed
-
+### move windows ###
 bindsym $mod+shift+Left move left
 bindsym $mod+shift+Down move down
 bindsym $mod+shift+Up move up
 bindsym $mod+shift+Right move right
 
+
+### window manipulations ###
+bindsym $mod+space focus mode_toggle
 bindsym $mod+shift+space floating toggle
+bindsym $mod+a focus parent
+bindsym $mod+e layout toggle split
+bindsym $mod+w layout tabbed
+#bindsym $mod+s layout stacking
+bindsym $mod+h split h
+bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
+
+### program hotkeys ###
+bindsym $mod+x exec firefox
+bindsym $mod+c exec spotify
+bindsym $mod+n exec pcmanfm
+
+
+### language control ###
+exec --no-startup-id setxkbmap us
+bindsym $mod+Shift+U exec --no-startup-id setxkbmap us
+bindsym $mod+Shift+D exec --no-startup-id setxkbmap de
+
+
 ### locking ###
-#set $Locker /usr/local/share/lock
-set $Locker gnome-screensaver-command -l
+set $Locker lock
 bindsym $mod+l exec --no-startup-id $Locker
 #exec --no-startup-id xautolock -time 5 -locker "$Locker"
 exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
 exec --no-startup-id xss-lock -- "$Locker"
 
-### volume control ###
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
-#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-#bindsym XF86AudioMute exec amixer -q set Master toggle
 
-# Sreen brightness controls
+### Sreen brightness controls ###
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
-# Touchpad controls
-exec /bin/bash /usr/local/share/settouchpadsettings
-bindsym XF86TouchpadToggle exec /bin/bash /usr/local/share/toggletouchpad
 
-# Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioStop exec playerctl stop
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+### Keyboard backlight control ###
+bindsym XF86KbdBrightnessUp exec light -A 50 -k
+bindsym XF86KbdBrightnessDown exec light -U 50 -k
+#bindsym XF86KbdBrightnessUp exec /usr/local/bin/kb-light.py + 1
+#bindsym XF86KbdBrightnessDown exec /usr/local/bin/kb-light.py - 1
 
-# Keyboard backlight control
-bindsym XF86KbdBrightnessUp exec /usr/local/bin/kb-light.py + 1
-bindsym XF86KbdBrightnessDown exec /usr/local/bin/kb-light.py - 1
-#bindsym XF86KbdBrightnessUp exec /bin/bash /usr/local/share/kbd_backlight up
-#bindsym XF86KbdBrightnessDown exec /bin/bash /usr/local/share/kbd_backlight down
 
-### autostart programs ###
-#exec_always --no-startup-id compton --config ~/.config/compton/compton.conf -b
-exec --no-startup-id feh --bg-scale /home/void/wallpaper.png
+### Touchpad controls ###
+exec settouchpadsettings
+bindsym XF86TouchpadToggle exec toggletouchpad
+
+
+### Media player controls ###
+#	keyboard arrows + alt for spotify and clementine
+bindsym mod1+Down   exec playerctl play-pause
+bindsym mod1+Up     exec playerctl stop
+bindsym mod1+Left   exec playerctl previous
+bindsym mod1+Right  exec playerctl next
+
+#	keyboard buttons + mod for mpc
+bindsym $mod+P exec mpc toggle
+bindsym $mod+S exec mpc stop
+bindsym $mod+less exec mpc prev
+bindsym $mod+greater exec mpc next
+
+#	multimedia keys do both always
+bindsym XF86AudioPlay exec "mpc toggle && playerctl play-pause"
+bindsym XF86AudioStop exec "mpc stop && playerctl stop"
+bindsym XF86AudioPrev exec "mpc prev && playerctl previous"
+bindsym XF86AudioNext exec "mpc next && playerctl next
+
+
+### volume control ###
+bindsym XF86AudioLowerVolume    exec --no-startup-id lmc down 5
+bindsym XF86AudioRaiseVolume    exec --no-startup-id lmc up 5
+bindsym XF86AudioMute           exec --no-startup-id lmc mute
+bindsym $mod+equal              exec --no-startup-id lmc up 5
+bindsym $mod+minus              exec --no-startup-id lmc down 5
+bindsym $mod+M                  exec --no-startup-id lmc mute
+
+
+### autostart ###
+exec --no-startup-id feh --bg-scale ~/wallpaper.png
+exec --no-startup-id compton --xrender-sync-fence
 exec --no-startup-id mpd
 exec --no-startup-id dmenu --daemon
-exec --no-startup-id xcompmgr -c -f -n 
+#exec --no-startup-id xcompmgr -c -f -n 
 exec --no-startup-id megasync
 exec --no-startup-id keepassxc
 exec --no-startup-id redshift
-exec --no-startup-id /usr/lib/notification-daemon/notification-daemon
+exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
 exec --no-startup-id unclutter
 exec --no-startup-id nm-applet
-exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id "pgrep -x i3mpdupdate || i3mpdupdate"
+exec_always --no-startup-id disable-standby-fs.py
+
 
 ### automount ###
-exec --no-startup-id mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/music /home/void/Documents/music
+exec_always --no-startup-id sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/music /home/void/Documents/music
+exec_always --no-startup-id sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/ /home/void/Documents/storage
 
-### preconfigured windows ####
+
+### preconfigured application settings ####
 for_window [class="Firefox"] move workspace $workspace2; workspace $workspace2
-for_window [class="Sublime"] move workspace $workspace3; workspace $workspace3
+for_window [title="Sublime Text 2"] move workspace $workspace3; workspace $workspace3
 for_window [class="Spotify"] move workspace $workspace4; workspace $workspace4
 for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px
 for_window [class="Lxappearance"] floating enable
 for_window [class="chromium"] enable border pixel 1
-for_window [class="URxvt"] floating enable border pixel 5
+for_window [class="URxvt"] border pixel 4
 for_window [class="Vlc"] floating enable border pixel 4
-for_window [class="XTerm"] floating enable border pixel 4
+for_window [title="floatingterm"] floating enable
 
-### Hotkeys for programs ###
-bindsym $mod+x exec firefox
-bindsym $mod+c exec spotify
-
+### i3-gaps stuff ###
 #smart_gaps on
 smart_borders on
+
+# Set borders
+new_window normal 0 px
+new_float normal 0 px
+for_window [class="^.*"] border pixel 3
 
 # Set inner/outer gaps
 gaps inner 20
 gaps outer 0
 
-# Gaps mode
+# Change gaps mode
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
-
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps_inner" {
         bindsym plus  gaps inner current plus 5

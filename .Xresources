@@ -13,12 +13,11 @@ URxvt.scrollTtyKeypress:true
 
 URxvt.cursorBlink:          true
 URxvt.cursorUnderline:      false
-URxvt.depth:31
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
 
 !- Perl Extension
-!URxvt.perl-ext:
-!URxvt.perl-ext-common:
-!URxvt.perl-ext-common:default,matcher,url-select,clipboard
+URxvt.perl-ext-common:default,matcher
 !URxvt.url-launcher: firefox
 !URxvt.matcher.button:1
 
@@ -27,16 +26,12 @@ URxvt.iso14755: False
 URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
 URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
 
-URxvt.underlineURLs:        true
-!URxvt.font.xft.FontAwesome\-g:size=8
-URxvt.font:xft:Inconsolata\-g:size=8
-URxvt.transparent:true
-URxvt.shading:20
+URxvt.underlineURLs:true
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12
+!URxvt.font:xft:Inconsolata\-g for Powerline:size=12
+!URxvt.transparent: true
+!URxvt.shading: 20
 URxvt.geometry:85x22
-
-!-Urgent Terminal for Notification
-URxvt*urgentOnBell: true
-URxvt*visualBell:   false
 
 	!colors
 *.foreground: #93a1a1
