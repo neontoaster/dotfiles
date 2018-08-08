@@ -1,0 +1,53 @@
+{
+  "keymaps": {
+    ":": { "type": "command.show" },
+    "o": { "type": "command.show.open" },
+    "O": { "type": "command.show.tabopen", "newTab": true },
+    "go": { "type": "command.show.open", "alter": true },
+    "Go": { "type": "command.show.tabopen", "alter": true },
+    "GO": { "type": "command.show.tabopen", "alter": true },
+    "k": { "type": "scroll.vertically", "count": -1 },
+    "j": { "type": "scroll.vertically", "count": 1 },
+    "h": { "type": "scroll.horizonally", "count": -1 },
+    "l": { "type": "scroll.horizonally", "count": 1 },
+    "gg": { "type": "scroll.top" },
+    "G": { "type": "scroll.bottom" },
+    "D": { "type": "tabs.close" },
+    "U": { "type": "tabs.reopen" },
+    "K": { "type": "tabs.prev", "count": 1 },
+    "J": { "type": "tabs.next", "count": 1 },
+    "gT": { "type": "tabs.prev", "count": 1 },
+    "gt": { "type": "tabs.next", "count": 1 },
+    "g0": { "type": "tabs.first" },
+    "zp": { "type": "tabs.pin.toggle" },
+    "zd": { "type": "tabs.duplicate" },
+    "f": { "type": "follow.start", "newTab": false, "background": false },
+    "F": { "type": "follow.start", "newTab": true, "background": false },
+    "gi": { "type": "focus.input" },
+    "/": { "type": "find.start" },
+    "n": { "type": "find.next" },
+    "N": { "type": "find.prev" }
+  },
+  "search": {
+    "default": "startpage",
+    "engines": {
+        "startpage" : "https://www.startpage.com/do/dsearch?query={}",
+        "i" : "https://www.startpage.com/do/search?q={}&cat=pics",
+        "google": "https://google.com/search?q={}",
+        "ddg": "https://duckduckgo.com/?q={}",
+        "wiki": "https://en.wikipedia.org/w/index.php?search={}",
+        "r" : "https://reddit.com/r/{}",
+        "tpb" : "http://thepiratebay.org/search/{}",
+        "ebay" : "https://ebay.de/sch/{}",
+        "arch" : "https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}",
+        "4" : "https://boards.4chan.org/{}/catalog"
+    }
+  },
+  "properties": {
+        "adjacenttab": false,
+        "smoothscroll": true,
+        "hintchars": "asdfghjkl"
+  },
+  "blacklist": [
+  ]
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -d "/mnt/veracrypt1/data" ]; then
+	veracrypt --password=Asusvw195n\!91263 --mount /dev/sda5
+fi
+
+if [ ! -d "/home/void/Documents/music/Playlists" ]; then
+	sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/music /home/void/Documents/music
+fi
+
+if [ ! -d "/home/void/Documents/storage/video" ]; then
+	sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE,uid=void,gid=wheel //192.168.0.242/storage/ /home/void/Documents/storage
+fi

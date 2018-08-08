@@ -3,13 +3,17 @@ export EDITOR="nano"
 export TERMINAL="urxvt"
 export BROWSER="firefox"
 export ZSH="/home/void/.oh-my-zsh"
+export MPD_HOST="/tmp/mpd.sock"
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
 
 # autostart i3 when logged in:
 if [[ "$(tty)" = "/dev/tty1" ]]; then
         pgrep i3 || exec startx
 fi
 
-ZSH_THEME="agnoster"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -37,20 +41,12 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER="void"
 
-# System Maintainence
+# Some aliases
 alias progs="(pacman -Qet && pacman -Qm) | sort -u" # List programs I've installed
 alias orphans="pacman -Qdt" # List orphan programs
-alias sdn="sudo shutdown now"
-
-# Some aliases
 alias p="sudo pacman"
 alias r="ranger"
 alias sr="sudo ranger"
 alias ka="killall"
 alias g="git"
-
-# Internet
-alias yt="youtube-dl --add-metadata -ic" # Download video link
-alias yta="youtube-dl --add-metadata -xic" # Download only audio
-alias YT="youtube-viewer"
 alias speedtest="speedometer -r wlp2s0"

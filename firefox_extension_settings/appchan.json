@@ -1,0 +1,1998 @@
+{
+  "version": "2.10.15",
+  "date": 1533690067344,
+  "Conf": {
+    "JSON Navigation": true,
+    "Update Stale Index": true,
+    "Catalog Links": true,
+    "External Catalog": false,
+    "Desktop Notifications": true,
+    "404 Redirect": true,
+    "Exempt Archives from Encryption": true,
+    "Keybinds": false,
+    "Time Formatting": true,
+    "Relative Post Dates": true,
+    "Relative Date Title": false,
+    "File Info Formatting": true,
+    "Thread Expansion": true,
+    "Comment Expansion": false,
+    "Index Navigation": false,
+    "Reply Navigation": false,
+    "Show Dice Roll": true,
+    "Color User IDs": true,
+    "Remove Spoilers": false,
+    "Reveal Spoilers": false,
+    "Show Support Message": true,
+    "Normalize URL": true,
+    "Announcement Hiding": true,
+    "Disable Autoplaying Sounds": false,
+    "Linkify": true,
+    "Link Title": true,
+    "Embedding": true,
+    "Auto-embed": false,
+    "Floating Embeds": false,
+    "Anonymize": false,
+    "Filter": true,
+    "Recursive Hiding": true,
+    "Post Hiding": false,
+    "Filtered Backlinks": true,
+    "Stubs": true,
+    "Image Expansion": true,
+    "Image Hover": true,
+    "Image Hover in Catalog": false,
+    "Gallery": true,
+    "Fullscreen Gallery": false,
+    "PDF in Gallery": false,
+    "Sauce": true,
+    "Reveal Spoiler Thumbnails": false,
+    "Replace GIF": false,
+    "Replace JPG": false,
+    "Replace PNG": false,
+    "Replace WEBM": false,
+    "Image Prefetching": true,
+    "Fappe Tyme": true,
+    "Werk Tyme": true,
+    "Autoplay": true,
+    "Restart when Opened": true,
+    "Show Controls": true,
+    "Loop in New Tab": true,
+    "Add Download Attribute to Filename": true,
+    "Menu": true,
+    "Report Link": false,
+    "Post Hiding Link": true,
+    "Delete Link": true,
+    "Download Link": true,
+    "Archive Link": true,
+    "Thread Updater": true,
+    "Unread Count": true,
+    "Quoted Title": false,
+    "Hide Unread Count at (0)": false,
+    "Unread Favicon": true,
+    "Unread Line": true,
+    "Scroll to Last Read Post": true,
+    "Thread Stats": true,
+    "IP Count in Stats": true,
+    "Page Count in Stats": true,
+    "Updater and Stats in Header": true,
+    "Thread Watcher": true,
+    "Mark New IPs": false,
+    "Header Shortcut": true,
+    "Page Shortcut": false,
+    "Persistent QR": true,
+    "Auto Hide QR": true,
+    "Open Post in New Tab": true,
+    "Remember QR Size": false,
+    "Remember Spoiler": false,
+    "Show Name and Subject": false,
+    "Cooldown": true,
+    "Posting Success Notifications": true,
+    "Captcha Warning Notifications": true,
+    "Dump List Before Comment": false,
+    "Auto-load captcha": false,
+    "Post on Captcha Completion": false,
+    "Captcha Fixes": true,
+    "Use Recaptcha v1": false,
+    "Quote Backlinks": true,
+    "OP Backlinks": true,
+    "Quote Inlining": true,
+    "Quote Hash Navigation": false,
+    "Forward Hiding": true,
+    "Quote Previewing": true,
+    "Quote Highlighting": true,
+    "Resurrect Quotes": true,
+    "Mark Quotes of You": true,
+    "Highlight Posts Quoting You": true,
+    "Highlight Own Posts": true,
+    "Double Beep": false,
+    "Mark OP Quotes": true,
+    "Mark Cross-thread Quotes": true,
+    "Quote Threading": false,
+    "Fit width": true,
+    "Fit height": false,
+    "Scroll into view": true,
+    "Expand spoilers": false,
+    "Expand videos": false,
+    "Expand from here": false,
+    "Advance on contract": false,
+    "Hide Thumbnails": false,
+    "Fit Width": true,
+    "Fit Height": true,
+    "Scroll to Post": true,
+    "Slide Delay": 6,
+    "Single Column Mode": true,
+    "Sidebar": "normal",
+    "Sidebar Location": "right",
+    "Top Thread Padding": "0",
+    "Bottom Thread Padding": "0",
+    "Left Thread Padding": "0",
+    "Right Thread Padding": "0",
+    "Announcements": "slideout",
+    "Board Title": "at sidebar top",
+    "Custom Board Titles": false,
+    "Persistent Custom Board Titles": false,
+    "Board Subtitle": true,
+    "4chan Banner": "at sidebar top",
+    "Icon Orientation": "horizontal",
+    "Slideout Watcher": true,
+    "Hide Navlinks": false,
+    "Alternate Post Colors": false,
+    "Color Reply Headings": false,
+    "Color File Info": false,
+    "OP Background": false,
+    "Backlinks Position": "default",
+    "Force Reply Break": false,
+    "Fit Width Replies": false,
+    "Indent Replies": true,
+    "Hide Delete UI": false,
+    "Post Spacing": "3",
+    "Vertical Post Padding": "5",
+    "Horizontal Post Padding": "20",
+    "Hide Horizontal Rules": false,
+    "Backlink Icons": false,
+    "Compact File Text": false,
+    "4chan SS Navigation": true,
+    "4chan SS Sidebar": true,
+    "4chan Banner Reflection": true,
+    "Faded 4chan Banner": true,
+    "Hide Ads": false,
+    "Shrink Ads": false,
+    "Fade Ads": true,
+    "Bolds": true,
+    "Italics": false,
+    "Sidebar Glow": true,
+    "Circle Checkboxes": true,
+    "Font": "sans-serif",
+    "Font Size": "13",
+    "Icons": "oneechan",
+    "Invisible Icons": false,
+    "Quote Shadows": true,
+    "Rounded Edges": false,
+    "Underline Links": false,
+    "NSFW/SFW Themes": false,
+    "Mascots": true,
+    "Click to Toggle": true,
+    "Mascot Location": "sidebar",
+    "Mascot Position": "default",
+    "Mascots Overlap Posts": true,
+    "NSFW/SFW Mascots": true,
+    "Grayscale Mascots": false,
+    "Mascot Opacity": "1.00",
+    "Hide Mascots on Catalog": false,
+    "Silhouettize Mascots": false,
+    "Silhouette Contrast": "0",
+    "Navigation Alignment": "left",
+    "Slideout Navigation": "compact",
+    "Pagination": "sticky bottom",
+    "Pagination Alignment": "center",
+    "Hide Navigation Decorations": false,
+    "Compact Post Form Inputs": true,
+    "Show Post Form Header": false,
+    "Post Form Style": "tabbed slideout",
+    "Post Form Slideout Transitions": true,
+    "Transparent Post Form": false,
+    "Post Form Decorations": false,
+    "Textarea Resize": "vertical",
+    "Tripcode Hider": true,
+    "Images Overlap Post Form": true,
+    "Captcha Filter": false,
+    "Current Board": false,
+    "Auto Update Thread Watcher": true,
+    "Auto Watch": true,
+    "Auto Watch Reply": true,
+    "Auto Prune": false,
+    "Show Unread Count": true,
+    "name": "# Filter any namefags:\n#/^(?!Anonymous$)/",
+    "uniqueID": "# Filter a specific ID:\n#/Txhvk1Tl/",
+    "tripcode": "# Filter any tripfag\n#/^!/",
+    "capcode": "# Set a custom class for mods:\n#/Mod$/;highlight:mod;op:yes\n# Set a custom class for moot:\n#/Admin$/;highlight:moot;op:yes",
+    "subject": "# Filter Generals on /v/:\n#/general/i;boards:v;op:only",
+    "comment": "# Filter Stallman copypasta on /g/:\n#/what you're refer+ing to as linux/i;boards:g",
+    "flag": "",
+    "filename": "",
+    "dimensions": "# Highlight potential wallpapers:\n#/1920x1080/;op:yes;highlight;top:no;boards:w,wg",
+    "filesize": "",
+    "MD5": "",
+    "sauces": "https://www.google.com/searchbyimage?image_url=%TURL\nhttp://iqdb.org/?url=%TURL\n#//tineye.com/search?url=%TURL\n#http://saucenao.com/search.php?url=%TURL\n#http://3d.iqdb.org/?url=%TURL\n#http://regex.info/exif.cgi?imgurl=%URL\n# uploaders:\n#http://imgur.com/upload?url=%URL;text:Upload to imgur\n#http://ompldr.org/upload?url1=%URL;text:Upload to ompldr\n# \"View Same\" in archives:\n#//archive.foolz.us/_/search/image/%MD5/;text:View same on foolz\n#//archive.foolz.us/%board/search/image/%MD5/;text:View same on foolz /%board/\n#//archive.installgentoo.net/%board/image/%MD5;text:View same on installgentoo /%board/",
+    "fappe": false,
+    "werk": false,
+    "Custom CSS": false,
+    "Index Mode": "catalog",
+    "Previous Index Mode": "paged",
+    "Index Sort": "bump",
+    "Index Size": "small",
+    "Threads per Page": 0,
+    "Open threads in a new tab": true,
+    "Show Replies": true,
+    "Pin Watched Threads": false,
+    "Anchor Hidden Threads": true,
+    "Refreshed Navigation": false,
+    "Fixed Header": true,
+    "Header auto-hide": false,
+    "Header auto-hide on scroll": false,
+    "Bottom Header": false,
+    "Header catalog links": false,
+    "Bottom Board List": true,
+    "Custom Board Navigation": true,
+    "boardnav": "[ toggle-all ]\na-replace\ng-replace\nw-replace\nwg-replace\nfit-replace\nmu-replace\ntv-replace\nsci-replace\nt-replace\nb-replace\nr9k-replace\n[external-text:\"FAQ\",\"https://github.com/zixaphir/appchan-x/wiki/Frequently-Asked-Questions\"]",
+    "QR.personas": "#options:\"sage\";boards:jp;always",
+    "time": "%a %d.%m.%y %H:%M:%S",
+    "backlink": ">>%id",
+    "fileInfo": "%l (%p%s, %r)",
+    "favicon": "ferongr",
+    "usercss": "/* Tripcode Italics: */\n/*\nspan.postertrip {\n  font-style: italic;\n}\n*/\n\n/* Add a rounded border to thumbnails (but not expanded images): */\n/*\n.fileThumb > img:first-child {\n  border: solid 2px rgba(0,0,100,0.5);\n  border-radius: 10px;\n}\n*/\n\n/* Make highlighted posts look inset on the page: */\n/*\ndiv.post:target,\ndiv.post.highlight {\n  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);\n}\n*/",
+    "Toggle board list": "Ctrl+b",
+    "Toggle header": "Shift+h",
+    "Open empty QR": "i",
+    "Open QR": "Shift+i",
+    "Open settings": "Alt+o",
+    "Close": "Esc",
+    "Spoiler tags": "Ctrl+s",
+    "Code tags": "Alt+c",
+    "Eqn tags": "Alt+e",
+    "Math tags": "Alt+m",
+    "Toggle sage": "Alt+s",
+    "Submit QR": "Ctrl+Enter",
+    "Post Without Name": "Alt+n",
+    "Watch": "w",
+    "Update": "r",
+    "Expand image": "Shift+e",
+    "Expand images": "e",
+    "Open Gallery": "g",
+    "Pause": "p",
+    "Slideshow": "s",
+    "fappeTyme": "f",
+    "werkTyme": "Shift+w",
+    "Front page": "1",
+    "Open front page": "Shift+1",
+    "Next page": "Ctrl+Right",
+    "Previous page": "Ctrl+Left",
+    "Open catalog": "Shift+c",
+    "Search form": "Ctrl+Alt+s",
+    "Paged mode": "Alt+1",
+    "All pages mode": "Alt+2",
+    "Catalog mode": "Alt+3",
+    "Cycle sort type": "Alt+x",
+    "Next thread": "Ctrl+Down",
+    "Previous thread": "Ctrl+Up",
+    "Expand thread": "Ctrl+e",
+    "Open thread": "o",
+    "Open thread tab": "Shift+o",
+    "Next reply": "j",
+    "Previous reply": "k",
+    "Deselect reply": "Shift+d",
+    "Hide": "x",
+    "Previous Post Quoting You": "Alt+Up",
+    "Next Post Quoting You": "Alt+Down",
+    "Beep": false,
+    "Auto Scroll": false,
+    "Bottom Scroll": false,
+    "Scroll BG": false,
+    "Auto Update": true,
+    "Optional Increase": false,
+    "Interval": 30,
+    "embedWidth": 640,
+    "embedHeight": 390,
+    "theme": "Minimalistic Mayhem",
+    "theme_sfw": "Yotsuba B",
+    "theme_nsfw": "Yotsuba",
+    "mascot": "Akiyama_Mio_3",
+    "pinnedThreads": {
+      "boards": {},
+      "lastChecked": 1533682091175
+    },
+    "hiddenPosts": {
+      "boards": {},
+      "lastChecked": 1533682091182
+    },
+    "lastReadPosts": {
+      "boards": {
+        "g": {
+          "66994816": 67007382,
+          "67046356": 67054579,
+          "67050426": 67056867,
+          "67052451": 67055172,
+          "67053268": 67057179,
+          "67056769": 67056871
+        }
+      },
+      "lastChecked": 1533682091195
+    },
+    "yourPosts": {
+      "boards": {},
+      "lastChecked": 1533682091184
+    },
+    "watchedThreads": {
+      "boards": {},
+      "lastChecked": 1533689653502
+    },
+    "Enabled Mascots": [],
+    "Enabled Mascots sfw": [
+      "chuunibyou",
+      "Yozora_Mikazuki",
+      "Yukkihaze_2",
+      "Yin_2",
+      "White_Curious",
+      "Vivian_James_1",
+      "Vivian_James_2",
+      "Suzumiya_Haruhi",
+      "Suruga_Kanbaru",
+      "Shirakiin_Ririchiyo",
+      "Samus_Aran_2",
+      "Shana",
+      "Shana_2",
+      "Revi",
+      "Railgun_3",
+      "Pink_Hair",
+      "Nagato_Yuki_3",
+      "Mizunashi_Akari",
+      "Motoko",
+      "Misaki_Mei",
+      "Mei_Sunohara",
+      "Megurine_Luka",
+      "Makoto",
+      "Makise_Kurisu",
+      "Kotobuki_Tsumugi",
+      "Kuroko_Shirai",
+      "Kurisu_Makise",
+      "Koiwai_Yotsuba",
+      "Kagari_Izuriha",
+      "Iwakura_Lain_2",
+      "Iwakura_Lain",
+      "Chie",
+      "Brioche_d_Arquien",
+      "Ayanami_Rei",
+      "Asuka_Langley_Soryu_6",
+      "Asuka_Langley_Soryu_3",
+      "Asuka_Langley_Soryu",
+      "Akiyama_Mio_3"
+    ],
+    "Enabled Mascots nsfw": [],
+    "Deleted Mascots": [
+      "Asuka",
+      "Twilight_Sparkle",
+      "Fluttershy_2",
+      "Fluttershy_Cutiemark",
+      "Pinkie_Pie",
+      "Rainbow_Dash",
+      "Rarity",
+      "Pinkie_Pie_2",
+      "Fluttershy",
+      "Applejack",
+      "Hitagi_Senjougahara",
+      "KS",
+      "Kagami_Taiga",
+      "Kirino_Ranmaru",
+      "Kousaka_Kirino",
+      "Mashiro_Shiina",
+      "Miyamoto_Konatsu",
+      "Yoko",
+      "Yuuki_Asuna",
+      "akari",
+      "alibaba",
+      "yuno",
+      "//i.minus.com/i0mtOEsBC9GlY.png",
+      "//i.minus.com/i62cv3csQaqgk.png",
+      "//i.minus.com/i92tUr90OVZGD.png",
+      "//i.minus.com/iDScshaEZqUuy.png",
+      "//i.minus.com/iDX5mImKBzrXK.png",
+      "//i.minus.com/iGRED5sHh4RMs.png",
+      "//i.minus.com/iHS6559NMU1tS.png",
+      "//i.minus.com/iHuUwYVywpp3Z.png",
+      "//i.minus.com/iJq4VXY1Gw8ZE.png",
+      "//i.minus.com/iQKrg7Pq7Y6Ed.png",
+      "//i.minus.com/iQzx9fPFgPUNl.png",
+      "//i.minus.com/iTdBWYMCXULLT.png",
+      "//i.minus.com/iVPKJeDXKPKeV.png",
+      "//i.minus.com/iVT3TjJ7lBRpl.png",
+      "//i.minus.com/ibbfIrZEoNLmiU.png",
+      "//i.minus.com/ibffjW5v0zrSGa.png",
+      "//i.minus.com/ibgUFGlOpedfbs.png",
+      "//i.minus.com/ibiq1joMemfzeM.png",
+      "//i.minus.com/ibjUbDLSU5pwhK.png",
+      "//i.minus.com/ibklztjz3Ua747.png",
+      "//i.minus.com/ibnnAPmolhTfE7.png",
+      "//i.minus.com/ibpHKNPxcFqRxs.png",
+      "//i.minus.com/iby8LyjXffukaI.png",
+      "//i.minus.com/ibzM531DBaHYXD.png",
+      "//i.minus.com/icECBJR5D5U4S.png",
+      "//i.minus.com/iclhgYeHDD77I.png",
+      "//i.minus.com/ifyPk7Yeo1JA7.png",
+      "//i.minus.com/ign5fGOZWTx5o.png",
+      "//i.minus.com/iiycujRmhn6QK.png",
+      "//i.minus.com/imy7iv5fuym8b.png",
+      "//i.minus.com/in8bF152Y9qVB.png",
+      "//i.minus.com/inDzKQ0Wck4ef.png",
+      "//i.minus.com/ipRzX1YsTyhgZ.png",
+      "//i.minus.com/isIzggtfUo4ql.png",
+      "//i.minus.com/ivHaKIFHRpPFP.png",
+      "//i.minus.com/iysolfmvz6WKs.png",
+      "//i.minus.com/iFQQPEaC3aEV7.png",
+      "//i.minus.com/ibbMKiznORGJ00.png",
+      "//i.minus.com/ibyT9dlTe1HN5P.png",
+      "Akiyama_Mio_sitting",
+      "Anime_Girl_in_Bondage",
+      "Anime_Girl_in_Bondage_2",
+      "Asuka_Langley_Soryu_5",
+      "Ayase_2",
+      "Ayase_Yue",
+      "Blue_Rose",
+      "CC2",
+      "Cirno",
+      "Erio_Touwa",
+      "Gasai_Yuno_2",
+      "Hatsune_Miku",
+      "Hatsune_Miku_2",
+      "Hatsune_Miku_6",
+      "Hatsune_Miku_7",
+      "Ika_Musume_3",
+      "Inori",
+      "Inori_2",
+      "Kagamine_Rin",
+      "Kinomoto_Sakura_2",
+      "Kirino_Kosaka_and_Ruri_Goko",
+      "Konjiki_no_Yami",
+      "Leonmitchelli",
+      "Nagato_Yuki_4",
+      "Nodoka_Miyazaki",
+      "Pixie",
+      "Railgun",
+      "Rukia_Nia_and_Asa",
+      "Saber",
+      "Sakurazaki_Setsuna",
+      "Seraphim",
+      "Teletha_Tessa_Testarossa",
+      "Tifa",
+      "Udine",
+      "Wanwan",
+      "Yoko_Littner",
+      "Ayase"
+    ],
+    "Hidden Categories": [
+      "Custom",
+      "Ponies",
+      "Silhouette",
+      "Western",
+      "Questionable"
+    ],
+    "userThemes": {},
+    "userMascots": {
+      "Asuka": {
+        "image": "http://img.booru.org/appchan//images/2/925bfa30a595b633c598c8515799b2c31e42efeb.png",
+        "category": "Custom",
+        "position": "default",
+        "height": "auto",
+        "width": "auto",
+        "vOffset": "0",
+        "hOffset": "0",
+        "center": false,
+        "silhouette": false
+      },
+      "Akiyama_Mio_sitting": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibnnAPmolhTfE7.png",
+        "name": "Akiyama_Mio_sitting"
+      },
+      "Anime_Girl_in_Bondage": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibbfIrZEoNLmiU.png",
+        "center": true,
+        "name": "Anime_Girl_in_Bondage"
+      },
+      "Anime_Girl_in_Bondage_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iGRED5sHh4RMs.png",
+        "center": true,
+        "name": "Anime_Girl_in_Bondage_2"
+      },
+      "Asuka_Langley_Soryu_5": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iJq4VXY1Gw8ZE.png",
+        "center": true,
+        "name": "Asuka_Langley_Soryu_5"
+      },
+      "Ayase_Yue": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ign5fGOZWTx5o.png",
+        "name": "Ayase_Yue"
+      },
+      "Ayase_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibjUbDLSU5pwhK.png",
+        "center": true,
+        "name": "Ayase_2"
+      },
+      "Blue_Rose": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibiq1joMemfzeM.png",
+        "center": true,
+        "name": "Blue_Rose"
+      },
+      "CC2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iVT3TjJ7lBRpl.png",
+        "center": true,
+        "name": "CC2"
+      },
+      "Cirno": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibffjW5v0zrSGa.png",
+        "center": true,
+        "name": "Cirno"
+      },
+      "Erio_Touwa": {
+        "category": "Questionable",
+        "image": "//i.minus.com/in8bF152Y9qVB.png",
+        "name": "Erio_Touwa"
+      },
+      "Gasai_Yuno_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ifyPk7Yeo1JA7.png",
+        "name": "Gasai_Yuno_2"
+      },
+      "Hatsune_Miku": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iHuUwYVywpp3Z.png",
+        "name": "Hatsune_Miku"
+      },
+      "Hatsune_Miku_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iclhgYeHDD77I.png",
+        "center": true,
+        "name": "Hatsune_Miku_2"
+      },
+      "Hatsune_Miku_6": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iQzx9fPFgPUNl.png",
+        "center": true,
+        "name": "Hatsune_Miku_6"
+      },
+      "Hatsune_Miku_7": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iDScshaEZqUuy.png",
+        "center": true,
+        "name": "Hatsune_Miku_7"
+      },
+      "Horo_3": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000907if_/https://i.minus.com/ibyT9dlTe1HN5P.png",
+        "position": "default",
+        "height": "auto",
+        "width": "auto",
+        "vOffset": "0",
+        "hOffset": "0",
+        "center": false,
+        "silhouette": false
+      },
+      "Horo_4": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000916if_/https://i.minus.com/ibbMKiznORGJ00.png",
+        "position": "default",
+        "height": "auto",
+        "width": "auto",
+        "vOffset": "0",
+        "hOffset": "0",
+        "center": false,
+        "silhouette": false
+      },
+      "Ika_Musume_3": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iby8LyjXffukaI.png",
+        "center": true,
+        "name": "Ika_Musume_3"
+      },
+      "Inori": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibpHKNPxcFqRxs.png",
+        "name": "Inori"
+      },
+      "Inori_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibzM531DBaHYXD.png",
+        "name": "Inori_2"
+      },
+      "Kagamine_Rin": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iVPKJeDXKPKeV.png",
+        "center": true,
+        "name": "Kagamine_Rin"
+      },
+      "Kinomoto_Sakura_2": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibklztjz3Ua747.png",
+        "center": true,
+        "name": "Kinomoto_Sakura_2"
+      },
+      "Kirino_Kosaka_and_Ruri_Goko": {
+        "category": "Questionable",
+        "image": "//i.minus.com/isIzggtfUo4ql.png",
+        "center": true,
+        "name": "Kirino_Kosaka_and_Ruri_Goko"
+      },
+      "Konjiki_no_Yami": {
+        "category": "Questionable",
+        "image": "//i.minus.com/imy7iv5fuym8b.png",
+        "position": "bottom",
+        "name": "Konjiki_no_Yami"
+      },
+      "Leonmitchelli": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ibgUFGlOpedfbs.png",
+        "center": true,
+        "name": "Leonmitchelli"
+      },
+      "Nagato_Yuki_4": {
+        "category": "Questionable",
+        "image": "//i.minus.com/i92tUr90OVZGD.png",
+        "center": true,
+        "name": "Nagato_Yuki_4"
+      },
+      "Nagato_Yuki_7": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827001006if_/https://i.minus.com/iFQQPEaC3aEV7.png",
+        "position": "default",
+        "height": "auto",
+        "width": "auto",
+        "vOffset": "0",
+        "hOffset": "0",
+        "center": false,
+        "silhouette": false
+      },
+      "Nodoka_Miyazaki": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iDX5mImKBzrXK.png",
+        "name": "Nodoka_Miyazaki"
+      },
+      "Pixie": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ipRzX1YsTyhgZ.png",
+        "center": true,
+        "name": "Pixie"
+      },
+      "Railgun": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iysolfmvz6WKs.png",
+        "center": true,
+        "name": "Railgun"
+      },
+      "Saber": {
+        "category": "Questionable",
+        "image": "//i.minus.com/i62cv3csQaqgk.png",
+        "center": true,
+        "name": "Saber"
+      },
+      "Sakurazaki_Setsuna": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iHS6559NMU1tS.png",
+        "name": "Sakurazaki_Setsuna"
+      },
+      "Seraphim": {
+        "category": "Questionable",
+        "image": "//i.minus.com/ivHaKIFHRpPFP.png",
+        "center": true,
+        "name": "Seraphim"
+      },
+      "Teletha_Tessa_Testarossa": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iQKrg7Pq7Y6Ed.png",
+        "name": "Teletha_Tessa_Testarossa"
+      },
+      "Rukia_Nia_and_Asa": {
+        "category": "Questionable",
+        "image": "//i.minus.com/icECBJR5D5U4S.png",
+        "name": "Rukia_Nia_and_Asa"
+      },
+      "Tifa": {
+        "category": "Questionable",
+        "image": "//i.minus.com/inDzKQ0Wck4ef.png",
+        "center": true,
+        "name": "Tifa"
+      },
+      "Udine": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iiycujRmhn6QK.png",
+        "position": "bottom",
+        "name": "Udine"
+      },
+      "Wanwan": {
+        "category": "Questionable",
+        "image": "//i.minus.com/iTdBWYMCXULLT.png",
+        "center": true,
+        "name": "Wanwan"
+      },
+      "Yoko_Littner": {
+        "category": "Questionable",
+        "image": "//i.minus.com/i0mtOEsBC9GlY.png",
+        "name": "Yoko_Littner"
+      },
+      "Asuka_Langley_Soryu": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib2z9ME9QKEBaS.png",
+        "center": true,
+        "name": "Asuka_Langley_Soryu"
+      },
+      "Asuka_Langley_Soryu_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iI3QR5SywNfg9.png",
+        "center": true,
+        "name": "Asuka_Langley_Soryu_2"
+      },
+      "Akiyama_Mio": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibrWLbKvjRnHZS.png",
+        "name": "Akiyama_Mio"
+      },
+      "Akiyama_Mio_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibmZgHvl3ZSxYk.png",
+        "name": "Akiyama_Mio_2"
+      },
+      "Akiyama_Mio_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/irFbpefCFt1cT.png",
+        "center": true,
+        "name": "Akiyama_Mio_3"
+      },
+      "Asuka_Langley_Soryu_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000634if_/https://i4.minus.com/jbq2hFrE4q75KT.png",
+        "center": true,
+        "position": "default",
+        "height": "auto",
+        "width": "auto",
+        "vOffset": "0",
+        "hOffset": "0",
+        "silhouette": false
+      },
+      "Asuka_Langley_Soryu_4": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibiiInQGLGnYNj.png",
+        "center": true,
+        "name": "Asuka_Langley_Soryu_4"
+      },
+      "Asuka_Langley_Soryu_6": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibzbnBcaEtoqck.png",
+        "position": "bottom",
+        "name": "Asuka_Langley_Soryu_6"
+      },
+      "Ayanami_Rei": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib0ft5OmqRZx2r.png",
+        "center": true,
+        "name": "Ayanami_Rei"
+      },
+      "BLACK_ROCK_SHOOTER": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibMe9MrTMdvAT.png",
+        "center": true,
+        "name": "BLACK_ROCK_SHOOTER"
+      },
+      "Brioche_d_Arquien": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibobXYJ2k3JXK.png",
+        "center": true,
+        "name": "Brioche_d_Arquien"
+      },
+      "CC": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iwndO4Pn6SO0X.png",
+        "center": true,
+        "name": "CC"
+      },
+      "Chie": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib0HI16h9FSjSp.png",
+        "center": true,
+        "name": "Chie"
+      },
+      "Cirno_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iSZ06ZxrcqAKq.png",
+        "center": true,
+        "name": "Cirno_2"
+      },
+      "Dawn_Hikari": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iL3J1EmcDkFzE.png",
+        "center": true,
+        "name": "Dawn_Hikari"
+      },
+      "Doppleganger": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iPvv86W9r3Rxm.png",
+        "name": "Doppleganger"
+      },
+      "Dragonkid": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iq9fuyWSjIDWf.png",
+        "center": true,
+        "name": "Dragonkid"
+      },
+      "Dragonkid_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i7sdxK3G12RB6.png",
+        "center": true,
+        "name": "Dragonkid_2"
+      },
+      "Eclair": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibsk5mMYVR5zuA.png",
+        "center": true,
+        "name": "Eclair"
+      },
+      "Evangeline_AK_McDowell": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibuq7a8zWKi2gl.png",
+        "center": true,
+        "name": "Evangeline_AK_McDowell"
+      },
+      "Yuzuki_Yukari": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iYQOz0iGM9ygq.png",
+        "center": true,
+        "name": "Yuzuki_Yukari"
+      },
+      "Yukkikaze": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ioQJAnyXebHDJ.png",
+        "center": true,
+        "name": "Yukkikaze"
+      },
+      "Yoko_Littner_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i7aUDY4h9uB1T.png",
+        "center": true,
+        "name": "Yoko_Littner_2"
+      },
+      "Yoko_Littner_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iYVd5DhCmB7VJ.png",
+        "center": true,
+        "name": "Yoko_Littner_3"
+      },
+      "Yozora_Mikazuki": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iIFEsDzoDALQd.png",
+        "name": "Yozora_Mikazuki"
+      },
+      "Yukkihaze_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/inpgaDlJtZ9Sc.png",
+        "center": true,
+        "name": "Yukkihaze_2"
+      },
+      "Yin_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/izkTpyjr1XlLR.png",
+        "center": true,
+        "name": "Yin_2"
+      },
+      "Yin": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iL9DlVtaAGFdq.png",
+        "name": "Yin"
+      },
+      "Yakumo_Ran": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ivKqn8vL9A8cQ.png",
+        "name": "Yakumo_Ran"
+      },
+      "White_Curious": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibfkj5osu99axe.png",
+        "center": true,
+        "name": "White_Curious"
+      },
+      "Vivian_James_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibtKEioz8jN37k.png",
+        "name": "Vivian_James_2"
+      },
+      "Vivian_James_1": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iYZ05HyI7aPUA.png",
+        "name": "Vivian_James_1"
+      },
+      "Tomozo_Kaoru": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/islUcBaPRYAgv.png",
+        "center": true,
+        "name": "Tomozo_Kaoru"
+      },
+      "Tewi_Inaba": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib2k9lwQIkmb66.png",
+        "name": "Tewi_Inaba"
+      },
+      "Suzumiya_Haruhi_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibnomd5iasjceY.png",
+        "center": true,
+        "name": "Suzumiya_Haruhi_2"
+      },
+      "Suzumiya_Haruhi": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iM9qMfUNh9Qi9.png",
+        "center": true,
+        "name": "Suzumiya_Haruhi"
+      },
+      "Suruga_Kanbaru": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/irEL7AgC80qKD.png",
+        "center": true,
+        "name": "Suruga_Kanbaru"
+      },
+      "Shirohibe": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iGu91k3KZeg00.png",
+        "position": "bottom",
+        "name": "Shirohibe"
+      },
+      "Shirakiin_Ririchiyo": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i1m0rdzmVLYLa.png",
+        "position": "bottom",
+        "center": true,
+        "name": "Shirakiin_Ririchiyo"
+      },
+      "Shinonome_Hakase": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iocCwDCnNgI19.png",
+        "center": true,
+        "name": "Shinonome_Hakase"
+      },
+      "Shinji_and_Girls": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/itMrEn56GzvzE.png",
+        "center": true,
+        "name": "Shinji_and_Girls"
+      },
+      "Shiki": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iIZm1JxxDIDQ1.png",
+        "name": "Shiki"
+      },
+      "Shana_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ioRICGu0Ipzj9.png",
+        "center": true,
+        "name": "Shana_2"
+      },
+      "Shana": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib2cTJMF0cYIde.png",
+        "center": true,
+        "name": "Shana"
+      },
+      "Samus_Aran_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibl4efsNtHpkXg.png",
+        "name": "Samus_Aran_2"
+      },
+      "Samus_Aran": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iWG1GFJ89A05p.png",
+        "center": true,
+        "name": "Samus_Aran"
+      },
+      "Ryuu": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iecVz4p2SuqK4.png",
+        "position": "bottom",
+        "name": "Ryuu"
+      },
+      "Ruri_Gokou": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibtZo1fdOk8NCB.png",
+        "position": "bottom",
+        "center": true,
+        "name": "Ruri_Gokou"
+      },
+      "Revi": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ivUMKcy5ow6Ab.png",
+        "position": "bottom",
+        "center": true,
+        "name": "Revi"
+      },
+      "Railgun_4": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iR3j0mGgd1927.png",
+        "center": true,
+        "name": "Railgun_4"
+      },
+      "Railgun_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iiW02dmqUwRcy.png",
+        "name": "Railgun_3"
+      },
+      "Railgun_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iNhpDDO0GSTeM.png",
+        "center": true,
+        "name": "Railgun_2"
+      },
+      "Pink_Hair": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibdwMaIPwdscao.png",
+        "center": true,
+        "name": "Pink_Hair"
+      },
+      "Pink_Doggy": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i1SpWAzfcIEQc.png",
+        "center": true,
+        "name": "Pink_Doggy"
+      },
+      "Patchouli_Knowledge_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i1MOPTmohOsMD.png",
+        "name": "Patchouli_Knowledge_2"
+      },
+      "Patchouli_Knowledge": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibnOEAxXaKlctB.png",
+        "center": true,
+        "name": "Patchouli_Knowledge"
+      },
+      "Oshino_Shinobu_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibqoNiWzynsVvg.png",
+        "position": "bottom",
+        "name": "Oshino_Shinobu_2"
+      },
+      "Oshino_Shinobu": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibwhAyR6D7OBAB.png",
+        "name": "Oshino_Shinobu"
+      },
+      "Noir_VinoCacao": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibo8aCWF0OwNwP.png",
+        "center": true,
+        "name": "Noir_VinoCacao"
+      },
+      "Nichijou": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iE8lbZ5f3OT2B.png",
+        "name": "Nichijou"
+      },
+      "Applejack": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/inZ8jSVsEhfnC.png",
+        "center": true,
+        "name": "Applejack"
+      },
+      "Ayase": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibmArq5Wb4Po4v.png",
+        "center": true,
+        "name": "Ayase"
+      },
+      "Fluttershy": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibwEFEGlRm0Uxy.png",
+        "name": "Fluttershy"
+      },
+      "Fluttershy_2": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibjtz6EU2OFPgh.png",
+        "center": true,
+        "name": "Fluttershy_2"
+      },
+      "Fluttershy_Cutiemark": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i5WVpIAlHQdhs.png",
+        "center": true,
+        "name": "Fluttershy_Cutiemark"
+      },
+      "Fujiwara_no_Mokou": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibpwDyMGodvni6.png",
+        "name": "Fujiwara_no_Mokou"
+      },
+      "Furudo_Erika": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iCrRzQ8WvHiSM.png",
+        "center": true,
+        "name": "Furudo_Erika"
+      },
+      "Gally": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iblWZGuSlWtDI6.png",
+        "center": true,
+        "name": "Gally"
+      },
+      "Gasai_Yuno": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iEQsK6K85jX2n.png",
+        "name": "Gasai_Yuno"
+      },
+      "George_Costanza": {
+        "category": "Western",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iFWdpFGfzLs6v.png",
+        "name": "George_Costanza"
+      },
+      "Hanako": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iRLF8gCIZbGjo.png",
+        "center": true,
+        "name": "Hanako"
+      },
+      "Hasekura_Youko": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iqBTFZf5UhLpR.png",
+        "center": true,
+        "name": "Hasekura_Youko"
+      },
+      "Hatsune_Miku_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iLJ4uDTcg1T8r.png",
+        "center": true,
+        "name": "Hatsune_Miku_3"
+      },
+      "Hatsune_Miku_4": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibjkPMLT8Uxitp.png",
+        "center": true,
+        "name": "Hatsune_Miku_4"
+      },
+      "Hatsune_Miku_5": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i9Evu9dyvok4G.png",
+        "center": true,
+        "name": "Hatsune_Miku_5"
+      },
+      "Hirasawa_Yui": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iuGe5uDaTNmhR.png",
+        "center": true,
+        "name": "Hirasawa_Yui"
+      },
+      "Homura_Akemi": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iPtrwFEEtPLhn.png",
+        "name": "Homura_Akemi"
+      },
+      "Horo": {
+        "category": "Silhouette",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibbMKiznORGJ00.png",
+        "silhouette": true,
+        "name": "Horo"
+      },
+      "Horo_2": {
+        "category": "Silhouette",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibyT9dlTe1HN5P.png",
+        "silhouette": true,
+        "width": 205,
+        "name": "Horo_2"
+      },
+      "Ika_Musume": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibqVu5GNfKx5bC.png",
+        "center": true,
+        "name": "Ika_Musume"
+      },
+      "Ika_Musume_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibhnEiE8HabEqC.png",
+        "center": true,
+        "name": "Ika_Musume_2"
+      },
+      "Iwakura_Lain": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iBXRRT19scoHf.png",
+        "center": true,
+        "name": "Iwakura_Lain"
+      },
+      "Iwakura_Lain_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ioMltWNYUWeJ3.png",
+        "center": true,
+        "name": "Iwakura_Lain_2"
+      },
+      "KOn_Girls": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibndVLiH09uINs.png",
+        "center": true,
+        "name": "KOn_Girls"
+      },
+      "Kagamine_Rin_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/jbkL01TIeJwEN6.png",
+        "name": "Kagamine_Rin_2"
+      },
+      "Kagari_Izuriha": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ihaFHsvFfL0vH.png",
+        "name": "Kagari_Izuriha"
+      },
+      "Kaname_Madoka": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iRuEFK8cdAHxB.png",
+        "center": true,
+        "name": "Kaname_Madoka"
+      },
+      "Karina": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iUADBOpQYPfeP.png",
+        "center": true,
+        "name": "Karina"
+      },
+      "Kigurumi_Harokitei": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibb17W5i3rQvut.png",
+        "center": true,
+        "name": "Kigurumi_Harokitei"
+      },
+      "Kinomoto_Sakura": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iVmsLKa4zLwZR.png",
+        "center": true,
+        "name": "Kinomoto_Sakura"
+      },
+      "Kirisame_Marisa": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibikDZH5CZ0V30.png",
+        "name": "Kirisame_Marisa"
+      },
+      "Koiwai_Yotsuba": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iKFKyVVBato2N.png",
+        "center": true,
+        "name": "Koiwai_Yotsuba"
+      },
+      "Koko": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ieVyNMSjXpBs2.png",
+        "center": true,
+        "name": "Koko"
+      },
+      "Kotobuki_Tsumugi": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i6doAUnM6jMAY.png",
+        "center": true,
+        "name": "Kotobuki_Tsumugi"
+      },
+      "Kurisu_Makise": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib1eMtRHdvc9ix.png",
+        "name": "Kurisu_Makise"
+      },
+      "Kuroko_Shirai": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i3K8F7lu2SHfn.png",
+        "name": "Kuroko_Shirai"
+      },
+      "Kyouko_Sakura": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iMrFOS1mfzIJP.png",
+        "center": true,
+        "name": "Kyouko_Sakura"
+      },
+      "Kyubee": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iD0SEJPeZa0Dw.png",
+        "name": "Kyubee"
+      },
+      "Kyubee_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iGlKiDZvM3xi8.png",
+        "center": true,
+        "name": "Kyubee_2"
+      },
+      "Li_Syaoran": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib0IWPBRSHyiDe.png",
+        "name": "Li_Syaoran"
+      },
+      "Link": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibd1JShAMTdJBH.png",
+        "center": true,
+        "name": "Link"
+      },
+      "Lizardgirl": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/is7h27Q6lsmyx.png",
+        "name": "Lizardgirl"
+      },
+      "Luka": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/inds5h2BOmVBy.png",
+        "name": "Luka"
+      },
+      "Madotsuki": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ik6QYfTfgx9Za.png",
+        "name": "Madotsuki"
+      },
+      "Makoto": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i7q6aOuUqqA9F.png",
+        "center": true,
+        "name": "Makoto"
+      },
+      "Mantis": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iBmluUJOZivY2.png",
+        "name": "Mantis"
+      },
+      "Megurine_Luka": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibxe63yidpz9Gz.png",
+        "center": true,
+        "name": "Megurine_Luka"
+      },
+      "Mei_Sunohara": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i7ElzNY4xQHHz.png",
+        "center": true,
+        "name": "Mei_Sunohara"
+      },
+      "Millefiori": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ifVzPtH8JHXjl.png",
+        "center": true,
+        "name": "Millefiori"
+      },
+      "Millefiori_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iMSUiQxRBylQG.png",
+        "center": true,
+        "name": "Millefiori_2"
+      },
+      "Millefiori_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iDOe3ltSvOYXZ.png",
+        "center": true,
+        "name": "Millefiori_3"
+      },
+      "Misaki_Mei": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/icmYGJ9vIOFjr.png",
+        "center": true,
+        "name": "Misaki_Mei"
+      },
+      "Mizunashi_Akari": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iNy9kHlNsUoVK.png",
+        "center": true,
+        "name": "Mizunashi_Akari"
+      },
+      "Motoko": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/irFtkWWyMChSA.png",
+        "center": true,
+        "name": "Motoko"
+      },
+      "Nagato_Yuki": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/it3pEawWIxY84.png",
+        "center": true,
+        "name": "Nagato_Yuki"
+      },
+      "Nagato_Yuki_2": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iuspcZbLvmqpb.png",
+        "center": true,
+        "name": "Nagato_Yuki_2"
+      },
+      "Nagato_Yuki_3": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibndIkldw4njbD.png",
+        "center": true,
+        "name": "Nagato_Yuki_3"
+      },
+      "Nagato_Yuki_5": {
+        "category": "Silhouette",
+        "width": "202",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iFQQPEaC3aEV7.png",
+        "silhouette": true,
+        "center": true,
+        "name": "Nagato_Yuki_5"
+      },
+      "Nakano_Azusa": {
+        "category": "Anime",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iiptfoMlr4v1k.png",
+        "name": "Nakano_Azusa"
+      },
+      "Pinkie_Pie": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ib1kcpqxvsyZWG.png",
+        "center": true,
+        "name": "Pinkie_Pie"
+      },
+      "Pinkie_Pie_2": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i8QRRgE7iKpw7.png",
+        "center": true,
+        "name": "Pinkie_Pie_2"
+      },
+      "Rainbow_Dash": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibthr5EDMZHV9j.png",
+        "center": true,
+        "name": "Rainbow_Dash"
+      },
+      "Rarity": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibkraGhhUh25CU.png",
+        "center": true,
+        "name": "Rarity"
+      },
+      "Tardis": {
+        "category": "Western",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iQL2bwpDfOgk.png",
+        "center": true,
+        "name": "Tardis"
+      },
+      "Twilight_Sparkle": {
+        "category": "Ponies",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibnMYVTZEykrKU.png",
+        "center": true,
+        "name": "Twilight_Sparkle"
+      },
+      "//i.minus.com/i0mtOEsBC9GlY.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i0mtOEsBC9GlY.png",
+        "name": "//i.minus.com/i0mtOEsBC9GlY.png"
+      },
+      "//i.minus.com/i62cv3csQaqgk.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i62cv3csQaqgk.png",
+        "name": "//i.minus.com/i62cv3csQaqgk.png"
+      },
+      "//i.minus.com/i7aUDY4h9uB1T.png": {
+        "category": "Anime",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i7aUDY4h9uB1T.png",
+        "name": "//i.minus.com/i7aUDY4h9uB1T.png"
+      },
+      "//i.minus.com/i92tUr90OVZGD.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/i92tUr90OVZGD.png",
+        "name": "//i.minus.com/i92tUr90OVZGD.png"
+      },
+      "//i.minus.com/iDScshaEZqUuy.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iDScshaEZqUuy.png",
+        "name": "//i.minus.com/iDScshaEZqUuy.png"
+      },
+      "//i.minus.com/iDX5mImKBzrXK.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iDX5mImKBzrXK.png",
+        "name": "//i.minus.com/iDX5mImKBzrXK.png"
+      },
+      "//i.minus.com/iFQQPEaC3aEV7.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iFQQPEaC3aEV7.png",
+        "name": "//i.minus.com/iFQQPEaC3aEV7.png"
+      },
+      "//i.minus.com/iGRED5sHh4RMs.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iGRED5sHh4RMs.png",
+        "name": "//i.minus.com/iGRED5sHh4RMs.png"
+      },
+      "//i.minus.com/iHS6559NMU1tS.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iHS6559NMU1tS.png",
+        "name": "//i.minus.com/iHS6559NMU1tS.png"
+      },
+      "//i.minus.com/iHuUwYVywpp3Z.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iHuUwYVywpp3Z.png",
+        "name": "//i.minus.com/iHuUwYVywpp3Z.png"
+      },
+      "//i.minus.com/iJq4VXY1Gw8ZE.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iJq4VXY1Gw8ZE.png",
+        "name": "//i.minus.com/iJq4VXY1Gw8ZE.png"
+      },
+      "//i.minus.com/iQKrg7Pq7Y6Ed.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iQKrg7Pq7Y6Ed.png",
+        "name": "//i.minus.com/iQKrg7Pq7Y6Ed.png"
+      },
+      "//i.minus.com/iQzx9fPFgPUNl.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iQzx9fPFgPUNl.png",
+        "name": "//i.minus.com/iQzx9fPFgPUNl.png"
+      },
+      "//i.minus.com/iTdBWYMCXULLT.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iTdBWYMCXULLT.png",
+        "name": "//i.minus.com/iTdBWYMCXULLT.png"
+      },
+      "//i.minus.com/iVPKJeDXKPKeV.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iVPKJeDXKPKeV.png",
+        "name": "//i.minus.com/iVPKJeDXKPKeV.png"
+      },
+      "//i.minus.com/iVT3TjJ7lBRpl.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iVT3TjJ7lBRpl.png",
+        "name": "//i.minus.com/iVT3TjJ7lBRpl.png"
+      },
+      "//i.minus.com/ibbMKiznORGJ00.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibbMKiznORGJ00.png",
+        "name": "//i.minus.com/ibbMKiznORGJ00.png"
+      },
+      "//i.minus.com/ibbfIrZEoNLmiU.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibbfIrZEoNLmiU.png",
+        "name": "//i.minus.com/ibbfIrZEoNLmiU.png"
+      },
+      "//i.minus.com/ibffjW5v0zrSGa.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibffjW5v0zrSGa.png",
+        "name": "//i.minus.com/ibffjW5v0zrSGa.png"
+      },
+      "//i.minus.com/ibgUFGlOpedfbs.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibgUFGlOpedfbs.png",
+        "name": "//i.minus.com/ibgUFGlOpedfbs.png"
+      },
+      "//i.minus.com/ibiq1joMemfzeM.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibiq1joMemfzeM.png",
+        "name": "//i.minus.com/ibiq1joMemfzeM.png"
+      },
+      "//i.minus.com/ibjUbDLSU5pwhK.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibjUbDLSU5pwhK.png",
+        "name": "//i.minus.com/ibjUbDLSU5pwhK.png"
+      },
+      "//i.minus.com/ibklztjz3Ua747.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibklztjz3Ua747.png",
+        "name": "//i.minus.com/ibklztjz3Ua747.png"
+      },
+      "//i.minus.com/ibnnAPmolhTfE7.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibnnAPmolhTfE7.png",
+        "name": "//i.minus.com/ibnnAPmolhTfE7.png"
+      },
+      "//i.minus.com/ibpHKNPxcFqRxs.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibpHKNPxcFqRxs.png",
+        "name": "//i.minus.com/ibpHKNPxcFqRxs.png"
+      },
+      "//i.minus.com/iby8LyjXffukaI.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iby8LyjXffukaI.png",
+        "name": "//i.minus.com/iby8LyjXffukaI.png"
+      },
+      "//i.minus.com/ibyT9dlTe1HN5P.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibyT9dlTe1HN5P.png",
+        "name": "//i.minus.com/ibyT9dlTe1HN5P.png"
+      },
+      "//i.minus.com/ibzM531DBaHYXD.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ibzM531DBaHYXD.png",
+        "name": "//i.minus.com/ibzM531DBaHYXD.png"
+      },
+      "//i.minus.com/icECBJR5D5U4S.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/icECBJR5D5U4S.png",
+        "name": "//i.minus.com/icECBJR5D5U4S.png"
+      },
+      "//i.minus.com/iclhgYeHDD77I.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iclhgYeHDD77I.png",
+        "name": "//i.minus.com/iclhgYeHDD77I.png"
+      },
+      "//i.minus.com/ifyPk7Yeo1JA7.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ifyPk7Yeo1JA7.png",
+        "name": "//i.minus.com/ifyPk7Yeo1JA7.png"
+      },
+      "//i.minus.com/ign5fGOZWTx5o.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ign5fGOZWTx5o.png",
+        "name": "//i.minus.com/ign5fGOZWTx5o.png"
+      },
+      "//i.minus.com/iiycujRmhn6QK.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iiycujRmhn6QK.png",
+        "position": "bottom",
+        "name": "//i.minus.com/iiycujRmhn6QK.png"
+      },
+      "//i.minus.com/imy7iv5fuym8b.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/imy7iv5fuym8b.png",
+        "position": "bottom",
+        "name": "//i.minus.com/imy7iv5fuym8b.png"
+      },
+      "//i.minus.com/in8bF152Y9qVB.png": {
+        "category": "Questionable",
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/in8bF152Y9qVB.png",
+        "name": "//i.minus.com/in8bF152Y9qVB.png"
+      },
+      "//i.minus.com/inDzKQ0Wck4ef.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/inDzKQ0Wck4ef.png",
+        "name": "//i.minus.com/inDzKQ0Wck4ef.png"
+      },
+      "//i.minus.com/ipRzX1YsTyhgZ.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ipRzX1YsTyhgZ.png",
+        "name": "//i.minus.com/ipRzX1YsTyhgZ.png"
+      },
+      "//i.minus.com/isIzggtfUo4ql.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/isIzggtfUo4ql.png",
+        "name": "//i.minus.com/isIzggtfUo4ql.png"
+      },
+      "//i.minus.com/ivHaKIFHRpPFP.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/ivHaKIFHRpPFP.png",
+        "name": "//i.minus.com/ivHaKIFHRpPFP.png"
+      },
+      "//i.minus.com/iysolfmvz6WKs.png": {
+        "category": "Questionable",
+        "center": true,
+        "image": "https://web.archive.org/web/20150827000615if_/https://i.minus.com/iysolfmvz6WKs.png",
+        "name": "//i.minus.com/iysolfmvz6WKs.png"
+      },
+      "BRS": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/24782f5eb36b4f32be21f62aedcc076024b13c95.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "BRS"
+      },
+      "BRS2": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/a0a11d5db7cacfcb8ce3973e277e4dfe9c9c58ea.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "BRS2"
+      },
+      "Bakemonogatari": {
+        "category": "Questionable",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/57ad67de74621323bbf62f40861f1186db384768.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "Bakemonogatari"
+      },
+      "Bakemonogatari2": {
+        "category": "Questionable",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/edb41ddd4378651a430d164d480bdea73a98e3a9.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "Bakemonogatari2"
+      },
+      "Bakemonogatari3": {
+        "category": "Questionable",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/14e2350699d1f085ad59aac31fb959fcd879edc8.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "Bakemonogatari3"
+      },
+      "Hitagi_Senjougahara": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": -45,
+        "height": "auto",
+        "image": "https://i.minus.com/icUNNyRQKumPz.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Hitagi_Senjougahara"
+      },
+      "KS": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 30,
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/0b87858aad62f8608a1756754be2d0e0b188f874.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 100,
+        "width": "auto",
+        "name": "KS"
+      },
+      "Kagami_Taiga": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i.minus.com/ihhgWi5dADZKx.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Kagami_Taiga"
+      },
+      "Kirino_Ranmaru": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i.minus.com/indbfcA4TS0Xb.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Kirino_Ranmaru"
+      },
+      "Kousaka_Kirino": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i2.minus.com/ikPgsoC0DBeuP.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Kousaka_Kirino"
+      },
+      "Makise_Kurisu": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/f388a375b10916806036a4d27bf3855d23154df4.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "Makise_Kurisu"
+      },
+      "Mashiro_Shiina": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i.minus.com/ibwkO6nLTS8aQW.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Mashiro_Shiina"
+      },
+      "Miyamoto_Konatsu": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i.minus.com/irUUuK1WcX8X8.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Miyamoto_Konatsu"
+      },
+      "Yoko": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 25,
+        "height": "520",
+        "image": "https://i.minus.com/ibkuPHnJCOVF5y.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Yoko"
+      },
+      "Yuuki_Asuna": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "https://i.minus.com/iGxFTTdgRFHPi.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "Yuuki_Asuna"
+      },
+      "adoka": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/d40b27903fc58eb4322e322bab14a1bf1daf8235.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "adoka"
+      },
+      "akari": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "https://i.minus.com/izqpjDX9Z88Pk.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "akari"
+      },
+      "alibaba": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "https://i.minus.com/iboIUPbZAbNRiz.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "alibaba"
+      },
+      "another": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/a1e547bd1b14fcd0b747e180ce86e5804da3ce55.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "another"
+      },
+      "chuunibyou": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 0,
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/2a3d6e884e631af515aaad3e7042e5b48664bc4a.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "chuunibyou"
+      },
+      "fuyumi_irisu": {
+        "category": "Custom",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/54e4e71525c17b6f1ce2d14032bd792ecea531af.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "fuyumi_irisu"
+      },
+      "hanako": {
+        "category": "Custom",
+        "center": false,
+        "hOffset": "0",
+        "height": "500",
+        "image": "http://img.booru.org/appchan//images/1/5f88a0655100f2e81f75e4a7aacf7fd17bd283c6.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "hanako"
+      },
+      "jinrui": {
+        "category": "Custom",
+        "center": false,
+        "hOffset": "-7",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/f648dc970a83c02016e5e697357dd89d7e95416a.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "jinrui"
+      },
+      "mirai": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "-30",
+        "height": "500",
+        "image": "http://img.booru.org/appchan//images/1/26d1049cae0cddcb5143ccea9e01dec36927045b.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "mirai"
+      },
+      "touhou": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": "0",
+        "height": "auto",
+        "image": "http://img.booru.org/appchan//images/1/ff86d0519a2ba683426f887dfd8dd77801f1e0e0.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": "0",
+        "width": "auto",
+        "name": "touhou"
+      },
+      "yuno": {
+        "category": "Anime",
+        "center": false,
+        "hOffset": 53,
+        "height": "520",
+        "image": "https://i.minus.com/ibhc1YdPCHjxb5.png",
+        "position": "default",
+        "silhouette": false,
+        "vOffset": 0,
+        "width": "auto",
+        "name": "yuno"
+      }
+    },
+    "selectedArchives": {},
+    "CachedTitles": {},
+    "editMode": false
+  }
+}

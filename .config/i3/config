@@ -7,7 +7,7 @@ floating_modifier $mod
 bindsym $mod+Return         exec --no-startup-id urxvt
 bindsym $mod+Shift+Return   exec --no-startup-id "urxvt -T floatingterm"
 bindsym $mod+d              exec --no-startup-id i3-dmenu-desktop
-bindsym F1                  '' > /dev/null                                  # unbind F1 because it's useless
+bindsym F1                  nop		# unbind F1 because it's useless
 bindsym $mod+F1             exec lxappearance
 bindsym $mod+Shift+C        reload
 bindsym $mod+Shift+R        restart
@@ -49,7 +49,7 @@ bar {
         position                    top
         mode                        dock
         strip_workspace_numbers     yes
-        tray_output		            none
+        tray_output		            primary
         height                      25
         font                        pango: xos4 Terminess Powerline, FontAwesome 9
         separator_symbol            "::"
@@ -67,7 +67,7 @@ bar {
 
 
 ### resize windows ###
-#Hint: you can also use the mouse for that
+# hint: you can also use the mouse for that
 mode "resize" {
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
@@ -109,19 +109,34 @@ bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 
 ### move focused container to workspace ###
-bindsym Mod1+1 move container to workspace $workspace1
-bindsym Mod1+2 move container to workspace $workspace2
-bindsym Mod1+3 move container to workspace $workspace3
-bindsym Mod1+4 move container to workspace $workspace4
-bindsym Mod1+5 move container to workspace $workspace5
-bindsym Mod1+6 move container to workspace $workspace6
-bindsym Mod1+7 move container to workspace $workspace7
-bindsym Mod1+8 move container to workspace $workspace8
-bindsym Mod1+9 move container to workspace $workspace9
-bindsym Mod1+0 move container to workspace $workspace10
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+
+
+### throw to workspace and follow ###
+bindsym mod1+Shift+1 move container to workspace $workspace1
+bindsym mod1+Shift+2 move container to workspace $workspace2
+bindsym mod1+Shift+3 move container to workspace $workspace3
+bindsym mod1+Shift+4 move container to workspace $workspace4
+bindsym mod1+Shift+5 move container to workspace $workspace5
+bindsym mod1+Shift+6 move container to workspace $workspace6
+bindsym mod1+Shift+7 move container to workspace $workspace7
+bindsym mod1+Shift+8 move container to workspace $workspace8
+bindsym mod1+Shift+9 move container to workspace $workspace9
+bindsym mod1+Shift+0 move container to workspace $workspace10
 
 
 ### focus windows ###
@@ -151,63 +166,67 @@ bindsym $mod+f fullscreen
 
 
 ### program hotkeys ###
+bindsym $mod+y exec qutebrowser
+bindsym $mod+z exec qutebrowser
 bindsym $mod+x exec firefox
 bindsym $mod+c exec spotify
 bindsym $mod+n exec pcmanfm
+bindsym $mod+F5 exec urxvt -e ncmpcpp
+bindsym $mod+F6 exec clementine
+bindsym $mod+F7 exec thunderbird
 
 
 ### language control ###
 exec --no-startup-id setxkbmap us
-bindsym $mod+Shift+U exec --no-startup-id setxkbmap us
-bindsym $mod+Shift+D exec --no-startup-id setxkbmap de
+#bindsym $mod+Shift+U exec --no-startup-id setxkbmap us
+#bindsym $mod+Shift+D exec --no-startup-id setxkbmap de
 
 
 ### locking ###
 set $Locker lock
 bindsym $mod+l exec --no-startup-id $Locker
-#exec --no-startup-id xautolock -time 5 -locker "$Locker"
-exec --no-startup-id xautolock -time 15 -locker "systemctl suspend"
+exec_always --no-startup-id xautolock -detectsleep -time 5 -locker "$locker" -killtime 15 -killer "systemctl suspend"
 exec --no-startup-id xss-lock -- "$Locker"
 
 
-### Sreen brightness controls ###
+### sreen brightness controls ###
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
 
-### Keyboard backlight control ###
+### keyboard backlight control ###
 bindsym XF86KbdBrightnessUp exec light -A 50 -k
 bindsym XF86KbdBrightnessDown exec light -U 50 -k
 #bindsym XF86KbdBrightnessUp exec /usr/local/bin/kb-light.py + 1
 #bindsym XF86KbdBrightnessDown exec /usr/local/bin/kb-light.py - 1
 
 
-### Touchpad controls ###
+### touchpad controls ###
 exec settouchpadsettings
 bindsym XF86TouchpadToggle exec toggletouchpad
 
 
 ### Media player controls ###
-#	keyboard arrows + alt for spotify and clementine
-bindsym mod1+Down   exec playerctl play-pause
-bindsym mod1+Up     exec playerctl stop
-bindsym mod1+Left   exec playerctl previous
-bindsym mod1+Right  exec playerctl next
+# keyboard arrows + alt for spotify and clementine
+bindsym mod1+Shift+Down   exec playerctl play-pause
+bindsym mod1+Shift+Up     exec playerctl stop
+bindsym mod1+Shift+Left   exec playerctl previous
+bindsym mod1+Shift+Right  exec playerctl next
 
-#	keyboard buttons + mod for mpc
+# keyboard buttons + mod for mpc
 bindsym $mod+P exec mpc toggle
 bindsym $mod+S exec mpc stop
 bindsym $mod+less exec mpc prev
 bindsym $mod+greater exec mpc next
 
-#	multimedia keys do both always
+# multimedia keys do both always
 bindsym XF86AudioPlay exec "mpc toggle && playerctl play-pause"
 bindsym XF86AudioStop exec "mpc stop && playerctl stop"
 bindsym XF86AudioPrev exec "mpc prev && playerctl previous"
 bindsym XF86AudioNext exec "mpc next && playerctl next
 
 
-### volume control ###
+### audio volume control ###
 bindsym XF86AudioLowerVolume    exec --no-startup-id lmc down 5
 bindsym XF86AudioRaiseVolume    exec --no-startup-id lmc up 5
 bindsym XF86AudioMute           exec --no-startup-id lmc mute
@@ -217,32 +236,34 @@ bindsym $mod+M                  exec --no-startup-id lmc mute
 
 
 ### autostart ###
-exec --no-startup-id feh --bg-scale ~/wallpaper.png
 exec --no-startup-id compton --xrender-sync-fence
 exec --no-startup-id mpd
 exec --no-startup-id dmenu --daemon
-#exec --no-startup-id xcompmgr -c -f -n 
+# exec --no-startup-id xcompmgr -c -f -n 
 exec --no-startup-id megasync
 exec --no-startup-id keepassxc
 exec --no-startup-id redshift
-exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
+# exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
 exec --no-startup-id unclutter
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id "pgrep -x i3mpdupdate || i3mpdupdate"
-exec_always --no-startup-id disable-standby-fs.py
+exec --no-startup-id ibus-daemon -drx
 
-
-### automount ###
-exec_always --no-startup-id sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/music /home/void/Documents/music
-exec_always --no-startup-id sudo mount -t cifs -o user=admin,pass=Asusvw195n\!,domain=WORKSPACE //192.168.0.242/storage/ /home/void/Documents/storage
+### autorun scripts ###
+exec --no-startup-id lightsOn.sh
+exec --no-startup-id automount
+exec_always --no-startup-id wallpaper
 
 
 ### preconfigured application settings ####
+for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px; move position center
+for_window [class="qutebrowser"] move workspace $workspace2; workspace $workspace2
 for_window [class="Firefox"] move workspace $workspace2; workspace $workspace2
-for_window [title="Sublime Text 2"] move workspace $workspace3; workspace $workspace3
+for_window [class="Sublime_text"] move workspace $workspace3; workspace $workspace3
 for_window [class="Spotify"] move workspace $workspace4; workspace $workspace4
-for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px
+for_window [class="Clementine"] move workspace $workspace4; workspace $workspace4
+for_window [title="ncmpcpp"] floating enable
+for_window [class="Pcmanfm"] move workspace $workspace5; workspace $workspace5
 for_window [class="Lxappearance"] floating enable
 for_window [class="chromium"] enable border pixel 1
 for_window [class="URxvt"] border pixel 4
