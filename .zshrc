@@ -33,20 +33,19 @@ HIST_STAMPS="dd.mm.yyyy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-  git
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
 DEFAULT_USER="void"
 
 # Some aliases
-alias progs="(pacman -Qet && pacman -Qm) | sort -u" # List programs I've installed
+alias progs="pacman -Qet" # List all programs installed
+alias pacprogs="pacman -Qent" # List programs installed from sync
+alias aurprogs="pacman -Qmt" # List programs installed from AUR
 alias orphans="pacman -Qdt" # List orphan programs
+alias progs_size="expac -H M '%m\t%n' | sort -h"
 alias p="sudo pacman"
 alias r="ranger"
 alias sr="sudo ranger"
 alias ka="killall"
-alias g="git"
 alias speedtest="speedometer -r wlp2s0"

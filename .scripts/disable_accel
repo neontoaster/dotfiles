@@ -1,0 +1,14 @@
+#!/bin/bash
+device="Wacom Bamboo 16FG 4x5"
+stylus="$device Pen stylus"
+eraser="$device Pen eraser"
+touch="$device Finger touch"
+pad="$device Finger pad"
+
+xset m 0 0
+
+xsetwacom set "$stylus" Mode relative
+xsetwacom set "$stylus" Suppress 1
+xsetwacom set "$stylus" RawSample 1
+xsetwacom set "$touch" Touch off
+xsetwacom set "$touch" Gesture off

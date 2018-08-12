@@ -3,17 +3,16 @@ checkAudioPlaying()
 {
     audioStatus=`pacmd list-sink-inputs | grep -c 'state: RUNNING'`
     if [ $audioStatus == 1 ];then
+	xautolock -disable
         delayScreensaver
+    else
+	xautolock -enable
     fi
 }
 
 delayScreensaver()
 {
     # reset inactivity time counter so screensaver is not started
-    xautolock -disable
-    xautolock -enable
-
-    #Check if DPMS is on. If it is, deactivate and reactivate again. If it is not, do nothing.    
     dpmsStatus=`xset -q | grep -ce 'DPMS is Enabled'`
     if [ $dpmsStatus == 1 ];then
         xset -dpms
