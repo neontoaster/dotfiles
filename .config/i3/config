@@ -49,7 +49,7 @@ bar {
         position                    top
         mode                        dock
         strip_workspace_numbers     yes
-        tray_output		            none
+        tray_output		            primary
         height                      25
         font                        pango: xos4 Terminess Powerline, FontAwesome 9
         separator_symbol            "::"

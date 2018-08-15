@@ -1,0 +1,12 @@
+w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia
+m: https://www.google.com/maps?q=%s GoogleMaps
+g: https://www.google.com/search?q=%s Google
+y: https://www.youtube.com/results?search_query=%s Youtube
+ddg: https://duckduckgo.com/?q=%s DuckDuckGo
+a: https://www.amazon.de/s/?field-keywords=%s Amazon
+i: https://www.startpage.com/do/search?q=%s&cat=pics Images
+r: https://reddit.com/r/%s Reddit
+tpb: http://thepiratebay.org/search/%s ThePirateBay
+ebay: "https://ebay.de/sch/%s Ebay
+arch: https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=%s ArchWiki
+4: https://boards.4chan.org/%s/ 4chan

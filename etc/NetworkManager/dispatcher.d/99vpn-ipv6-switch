@@ -2,6 +2,10 @@
 # Network Manager Dispatcher Hook:
 # enables/disables ipv6 on vpn-down/vpn-up respectively
 
+# make executable with:
+# sudo chmod 755 /etc/NetworkManager/dispatcher.d/99vpn-ipv6-switch
+
+
 INTERFACE="$1"
 ACTION="$2"
 

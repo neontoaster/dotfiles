@@ -1,0 +1,58 @@
+#go to
+map gg scrollToTop
+map G scrollToBottom
+map gt nextTab
+map gT previousTab
+map g0 firstTab
+map gi focusInput
+
+#history
+map H goBack
+map L goForward
+
+#page nav
+map j scrollPageDown
+map k scrollPageUp
+bind h scrollLeft
+bind l scrollRight
+
+#yank / paste
+map yy copyCurrentUrl
+map yt duplicateTab
+map p openCopiedUrlInCurrentTab
+map P openCopiedUrlInNewTab
+
+#tab nav
+map K nextTab
+map J previousTab
+map D removeTab
+map U restoreTab
+
+##############
+unmapAll
+map <a-o> Vomnibar.activateInNewTab
+map <a-h> showHelp
+map i focusInput
+map f LinkHints.activateMode
+map F LinkHints.activateModeToOpenInNewTab
+map <a-f> LinkHints.activateModeToOpenInNewForegroundTab
+map <a-d> LinkHints.activateModeToDownloadLink
+map [ goPrevious
+map ] goNext
+map v enterVisualMode
+map t createTab
+map <a-p> LinkHints.activateModeToOpenIncognito
+
+#Vomnibar
+map o Vomnibar.activate
+map O Vomnibar.activateInNewTab
+map go Vomnibar.activateEditUrl
+map gO Vomnibar.activateInNewTab
+map T Vomnibar.activateTabSelection
+map b Vomnibar.activateBookmarks
+map B Vomnibar.activateBookmarksInNewTab
+
+#find
+map / enterFindMode
+map n performFind
+map N performBackwardsFind
