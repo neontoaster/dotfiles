@@ -1,9 +1,11 @@
+# env vars
 export PATH="$PATH:$HOME/.scripts"
-export EDITOR="nano"
+export EDITOR="vim"
 export TERMINAL="urxvt"
 export BROWSER="firefox"
 export ZSH="/home/void/.oh-my-zsh"
-export MPD_HOST="/tmp/mpd.sock"
+export MPD_HOST="127.0.0.1"
+#export MPD_HOST="/tmp/mpd.sock"
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
@@ -13,39 +15,43 @@ if [[ "$(tty)" = "/dev/tty1" ]]; then
         pgrep i3 || exec startx
 fi
 
-ZSH_THEME="af-magic"
+# Import colorscheme from wal
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
+. "${HOME}/.cache/wal/colors.sh"
+alias dmen='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
+# command and completion settings
 COMPLETION_WAITING_DOTS="true"
-
 HIST_STAMPS="dd.mm.yyyy"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
-
+#CASE_SENSITIVE="true"
+#HYPHEN_INSENSITIVE="true"
+#ENABLE_CORRECTION="true"
+plugins=(git colored-man-pages colorize cp extract last-working-dir zsh-syntax-highlighting)
+ZSH_THEME="sunrise"
 source $ZSH/oh-my-zsh.sh
 DEFAULT_USER="void"
 
-# Some aliases
-alias progs="pacman -Qet" # List all programs installed
-alias pacprogs="pacman -Qent" # List programs installed from sync
-alias aurprogs="pacman -Qmt" # List programs installed from AUR
-alias orphans="pacman -Qdt" # List orphan programs
+# aliases
+alias progs="pacman -Qett" # List all programs installed, including optionally required ones
+alias pacprogs="pacman -Qentt" # List programs installed from sync, inluding optionally required ones
+alias aurprogs="pacman -Qemtt" # List programs installed from AUR, including optionally required ones
+alias orphans="pacman -Qqdt" # List true orphans
+alias orphans_all="pacman -Qqdtt" # List all orphans
 alias progs_size="expac -H M '%m\t%n' | sort -h"
+alias uninstall="p -Rns"
 alias p="sudo pacman"
 alias r="ranger"
 alias sr="sudo ranger"
 alias ka="killall"
-alias speedtest="speedometer -r wlp2s0"
+alias downspeed="speedometer -r wlp2s0"
+alias ipv6off="sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1"
+alias ipv6on="sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0"
+alias ipadr="curl -4s ifconfig.co || echo error"
+alias ipadr6="curl -6s ifconfig.co || echo off"
+alias vpn="sudo protonvpn-cli"
+alias dns="echo `cat /etc/resolv.conf | grep -v '#' | awk '{print $2}'`"
+alias v="vim"
+alias sv="sudo vim"
+alias sdn="shutdown now"
+alias mkd="mkdir -pv"

@@ -21,13 +21,14 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['scaleway-fr', 'cloudflare']
+#server_names = ['scaleway-fr', 'cloudflare']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
 listen_addresses = ['127.0.0.1:53', '[::1]:53']
+#listen_addresses = []
 
 
 ## Maximum number of simultaneous client connections to accept
@@ -168,13 +169,13 @@ cert_refresh_delay = 240
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
 
-fallback_resolver = '9.9.9.9:53'
+fallback_resolver = '1.1.1.1:53'
 
 
 ## Never let dnscrypt-proxy try to use the system DNS settings;
 ## unconditionally use the fallback resolver.
 
-ignore_system_dns = false
+ignore_system_dns = true
 
 
 ## Maximum time (in seconds) to wait for network connectivity before
@@ -293,7 +294,7 @@ cache_neg_max_ttl = 600
 
   ## Path to the query log file (absolute, or relative to the same directory as the executable file)
 
-  # file = '/var/log/dnscrypt-proxy/query.log'
+  file = '/var/log/dnscrypt-proxy/query.log'
 
 
   ## Query log format (currently supported: tsv and ltsv)
@@ -319,7 +320,7 @@ cache_neg_max_ttl = 600
 
   ## Path to the query log file (absolute, or relative to the same directory as the executable file)
 
-  # file = '/var/log/dnscrypt-proxy/nx.log'
+  file = '/var/log/dnscrypt-proxy/nx.log'
 
 
   ## Query log format (currently supported: tsv and ltsv)
@@ -354,7 +355,7 @@ cache_neg_max_ttl = 600
 
   ## Optional path to a file logging blocked queries
 
-  # log_file = '/var/log/dnscrypt-proxy/blocked.log'
+  log_file = '/var/log/dnscrypt-proxy/blocked.log'
 
 
   ## Optional log format: tsv or ltsv (default: tsv)
@@ -382,7 +383,7 @@ cache_neg_max_ttl = 600
 
   ## Optional path to a file logging blocked queries
 
-  # log_file = '/var/log/dnscrypt-proxy/ip-blocked.log'
+  log_file = '/var/log/dnscrypt-proxy/ip-blocked.log'
 
 
   ## Optional log format: tsv or ltsv (default: tsv)
@@ -410,7 +411,7 @@ cache_neg_max_ttl = 600
 
   ## Optional path to a file logging whitelisted queries
 
-  # log_file = '/var/log/dnscrypt-proxy/whitelisted.log'
+  log_file = '/var/log/dnscrypt-proxy/whitelisted.log'
 
 
   ## Optional log format: tsv or ltsv (default: tsv)

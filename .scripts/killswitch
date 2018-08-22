@@ -1,0 +1,75 @@
+#!/bin/bash
+
+killswitch_on() {
+	sudo ufw enable
+	#sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+}
+
+killswitch_off() {
+	sudo ufw disable
+	#sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+}
+
+
+toggleipv6() {
+	ipv6_disabled="$(sysctl net.ipv6.conf.all.disable_ipv6 | awk '{print $NF}')"
+	(($ipv6_disabled)) || sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+	(($ipv6_disabled)) && sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+}
+
+case "$1" in
+	"setup-ufw")
+		sudo ufw disable;
+		sudo ufw reset;
+		sudo ufw default deny outgoing;
+		sudo ufw default deny incoming;
+		sudo ufw default deny forward;
+
+		sudo ufw allow in on tun0;
+		sudo ufw allow out on tun0;
+
+		sudo ufw allow out from any to any proto udp port 1194;
+		sudo ufw allow in from any to any proto udp port 1194;
+		sudo ufw allow 53;
+
+		sudo ufw allow out to 192.168.0.0/24;
+		sudo ufw allow in from 192.168.0.0/24;
+		sudo ufw allow out to 127.0.0.1;
+		sudo ufw allow in from 127.0.0.1;;
+	"reset-ufw") sudo ufw disable; sudo ufw reset;;
+	"setup-iptables")
+		iptables -F;
+		iptables -P INPUT DROP;
+		iptables -P OUTPUT DROP;
+		iptables -P FORWARD DROP;
+
+		iptables -A OUTPUT -o tun0 -j ACCEPT;
+		iptables -A INPUT -i tun0 -j ACCEPT;
+		iptables -A INPUT -i tun0 -m state --state ESTABLISHED,RELATED -j ACCEPT;
+		iptables -A OUTPUT -o tun0 -m state --state ESTABLISHED,RELATED -j ACCEPT;
+		iptables -A OUTPUT -p udp -m udp --dport 1194 -j ACCEPT;
+		iptables -A INPUT -p udp -m udp --sport 1194 -j ACCEPT;
+
+		iptables -A INPUT -s 127.0.0.1 -j ACCEPT;
+		iptables -A OUTPUT -d 127.0.0.1 -j ACCEPT;
+		iptables -A INPUT -s 192.168.0.0/24 -j ACCEPT;
+		iptables -A OUTPUT -d 192.168.0.0/24 -j ACCEPT;;
+	"reset-iptables")
+		iptables -F;
+		iptables -A INPUT -j ACCEPT;
+		iptables -A OUTPUT -j ACCEPT;;
+	"on") killswitch_on;;
+	"enable") killswitch_on;;
+	"disable") killswitch_off;;
+	"off") killswitch_off;;
+	*)
+		# Checks if VPN is running and enables killswitch accordingly
+		# If VPN is not running it re-enables all connections
+		GET_VPN=$(nmcli con show | grep tun0 | cut -d ' ' -f1);
+		if [[ $GET_VPN == *"tun0"* ]]
+		then
+		  killswitch_on
+		else
+		  killswitch_off
+		fi;;
+esac

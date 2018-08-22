@@ -14,7 +14,6 @@ URxvt.scrollTtyKeypress:true
 URxvt.cursorBlink:          true
 URxvt.cursorUnderline:      false
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/c800
 
 !- Perl Extension
 URxvt.perl-ext-common:default,matcher
@@ -22,9 +21,9 @@ URxvt.perl-ext-common:default,matcher
 !URxvt.matcher.button:1
 
 !- Copy/paste
-URxvt.iso14755: False
-URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
-URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
+;URxvt.iso14755: False
+;URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
+;URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
 
 URxvt.underlineURLs:true
 URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12
@@ -33,39 +32,40 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12
 !URxvt.shading: 20
 URxvt.geometry:85x22
 
-	!colors
-*.foreground: #93a1a1
-*.background: #3c3b37
-*.cursorColor: #93a1a1
+!colors
+! Special
+*background:    #151d22
+*foreground:    #afe1d2
+*.cursorColor:  #2d4944
 
 ! black
-*.color0: #5f5f5f
-*.color8: #828282
+*color0: #1d282f
+*color8: #344048
 
 ! red
-*.color1: #d96468
-*.color9: #d98f93
+*color1: #6b3659
+*color9: #874272
 
-! green
-*.color2: #a2d964
-*.color10: #b8d98f
+! Green
+*color2: #396f5e
+*color10: #448773
 
-! yellow
-*.color3: #d9c964
-*.color11: #d9cf8f
+! Yellow
+*color3: #cbd59a
+*color11: #f0f8c9
 
-! blue
-*.color4: #64a2d9
-*.color12: #8f99d9
+! Blue
+*color4: #364670
+*color12: #455a8e
 
-! magenta
-*.color5: #9a64d9
-*.color13: #b08fd9
+! Magenta
+*color5:  #613a73
+*color13: #794b87
 
-! cyan
-*.color6: #64d9d5
-*.color14: #8fd9d5
+! Cyan
+*color6: #1c6689
+*color14: #207ba2
 
-! white
-*.color7: #989898
-*.color15: #c5c5c5
+! White
+*color7:  #93cfbd
+*color15: #b8eadb
