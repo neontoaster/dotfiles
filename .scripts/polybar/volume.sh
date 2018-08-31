@@ -2,8 +2,6 @@
 
 volume_print() {
 
-sink=$( pacmd list-sinks | awk '/^\s+\* index:/{print $3}' )
-
     if pacmd list-sinks | grep active | head -n 1 | grep -q speaker; then
         icon=""
     elif pacmd list-sinks | grep active | head -n 1 | grep -q headphones; then
@@ -15,7 +13,8 @@ sink=$( pacmd list-sinks | awk '/^\s+\* index:/{print $3}' )
     muted=$(pamixer --get-mute)
 
     if [ "$muted" = true ]; then
-        echo " --"
+#        echo " --"
+        echo ""
     else
         echo "$icon $(pamixer --get-volume)"
     fi
@@ -24,7 +23,7 @@ sink=$( pacmd list-sinks | awk '/^\s+\* index:/{print $3}' )
 volume_print
 
 pactl subscribe | while read -r event; do
-    if echo "$event" | grep -q "#$sink"; then
+    if echo "$event" | grep -q "sink"; then
         volume_print
     fi
 done

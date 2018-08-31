@@ -4,7 +4,7 @@
 
 #GET_VPN=$(nmcli con show | grep tun0 | cut -d ' ' -f1)
 #if [[ $GET_VPN == *"tun0"* ]]
-#then   
+#then
 #    STATUS=ON
 #else
 #    STATUS=OFF
@@ -20,9 +20,9 @@ fi
 if [[ "$STATUS" == "ON" ]]
 then
 #    echo " VPN"
-    echo " VPN on"
+    echo " VPN"
 #    echo "VPN On "
 #	 echo VPN On: `curl -4s ifconfig.co || echo no internet`
 else
-    echo " VPN off"
+    echo " VPN"
 fi
