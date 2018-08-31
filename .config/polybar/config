@@ -26,6 +26,7 @@ alert = ${xrdb:color9}
 
 [bar/fake]
 ;phantom bar (invisible) to create shadow for main bar
+monitor = eDP1
 width = 100%:-28
 height = 40
 offset-x = 14
@@ -43,6 +44,7 @@ override-redirect = true
 
 [bar/top]
 ;main bar
+monitor = eDP1
 ### positioning ###
 width = 100%
 height = 40
@@ -87,8 +89,8 @@ font-2 = Weather Icons:size=9;3
 
 ### modules ###
 modules-left = workspace
-modules-center = mopidy mediaplayer
-modules-right = weather-full volume battery wifi vpn updates date time language
+;modules-center = mopidy mediaplayer
+modules-right =  mopidy mediaplayer weather-full battery wifi vpn updates date time language volume
 
 
 [module/language]
@@ -113,12 +115,12 @@ format = <label-state> <label-mode>
 index-sort = false
 strip-wsnumbers = true
 ;fuzzy-match = true
-;label-mode-padding = 2
+label-mode-padding = 2
 ;label-mode-foreground = #000
 ;label-mode-background = ${colors.primary}
 
 label-focused = %name%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.primary}
 label-focused-underline = ${colors.primary}
 label-focused-padding = 2
 
@@ -135,6 +137,10 @@ label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
+; Separator in between workspaces
+;label-separator = |
+;label-separator-padding = 2
+;label-separator-foreground = #ffb52a
 
 [module/backlight]
 ;shows backlight brightness and allows control
@@ -464,12 +470,12 @@ interval = 5
 [module/updates]
 ;shows number of upgradeable packages (if there are any, otherwise hidden)
 type = custom/script
-interval = 3600
+tail = true
 format = "<label> "
 format-prefix = " "
 format-prefix-foreground = ${colors.primary}
-exec = aurman -Qu | grep -v ignored | wc -l | sed -e '/^0$/d' | sed -e "/^$/d"
-click-left = $TERMINAL -e aurman -Syu & disown
+exec = ~/.scripts/polybar/update.sh
+click-left = ~/.scripts/polybar/update.sh update & disown
 
 
 [module/caffeine]
