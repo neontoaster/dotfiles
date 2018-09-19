@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#$HOME/.scripts/automount
+$HOME/.scripts/disable_accel
+$HOME/.scripts/lightsOn.sh & disown
+$HOME/.scripts/settouchpadsettings
+ibus-daemon -drx
+#mpd & disown
+mopidy & disown
+#syncthing & disown

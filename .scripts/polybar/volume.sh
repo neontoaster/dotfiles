@@ -13,8 +13,8 @@ volume_print() {
     muted=$(pamixer --get-mute)
 
     if [ "$muted" = true ]; then
-#        echo " --"
-        echo ""
+        echo " --"
+#        echo ""
     else
         echo "$icon $(pamixer --get-volume)"
     fi

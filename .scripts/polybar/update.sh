@@ -22,7 +22,7 @@ case "$1" in
 	"update")
 		$TERMINAL -e $HOME/.scripts/polybar/update.sh install;;
 	"install")
-		sudo pacman -Syu && trizen -Syu --aur && echo "" > $HOME/.updates;;
+		sudo pacman -Syu && yay -Syu --aur && echo "" > $HOME/.updates;;
 	*)
 		check_updates &
 		while :

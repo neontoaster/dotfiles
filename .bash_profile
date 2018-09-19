@@ -13,3 +13,5 @@ export BROWSER="firefox"
 if [[ "$(tty)" = "/dev/tty1" ]]; then
 	pgrep i3 || exec startx
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"

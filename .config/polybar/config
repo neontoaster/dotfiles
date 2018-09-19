@@ -27,6 +27,8 @@ alert = ${xrdb:color9}
 [bar/fake]
 ;phantom bar (invisible) to create shadow for main bar
 monitor = eDP1
+monitor-fallback = HDMI1
+monitor-strict = false
 width = 100%:-28
 height = 40
 offset-x = 14
@@ -45,6 +47,8 @@ override-redirect = true
 [bar/top]
 ;main bar
 monitor = eDP1
+monitor-fallback = HDMI1
+monitor-strict = false
 ### positioning ###
 width = 100%
 height = 40
@@ -59,7 +63,7 @@ tray-position = right
 tray-padding = 0
 tray-maxsize = 16
 ;tray-offset-y = 15
-;tray-detached = true
+tray-detached = false
 
 ### bar colors ###
 background = ${colors.background}
@@ -89,8 +93,8 @@ font-2 = Weather Icons:size=9;3
 
 ### modules ###
 modules-left = workspace
-;modules-center = mopidy mediaplayer
-modules-right =  mopidy mediaplayer weather-full battery wifi vpn updates date time language volume
+modules-center = mopidy mediaplayer
+modules-right = weather-full battery wifi vpn updates date time language volume
 
 
 [module/language]
@@ -222,7 +226,7 @@ exec = ~/.scripts/polybar/weather.sh | awk '{print $6}'
 format = "<label> "
 format-prefix = " "
 interval = 600
-click-left = urxvt -e popweather
+click-left = urxvt -T floatingterm -e popweather
 
 
 [module/weather-full]
@@ -287,7 +291,9 @@ type = custom/script
 ;format-prefix = ""
 exec = ~/.scripts/polybar/vpn.sh
 interval = 10
-
+click-left = $TERMINAL -T floatingterm -e sudo protonvpn-cli -l & disown
+click-right = $TERMINAL -T floatingterm -e sudo protonvpn-cli -d & disown
+click-middle = $TERMINAL -T floatingterm -e sudo protonvpn-cli -c & disown
 
 [module/wifi]
 ;displays status of wifi connection
@@ -417,7 +423,7 @@ type = custom/script
 exec = ~/.scripts/polybar/volume.sh
 tail = true
 click-left = pamixer -t
-click-right = $TERMINAL -e pulsemixer & disown
+click-right = $TERMINAL -T floatingterm -e pulsemixer & disown
 scroll-up = pamixer -i 5
 scroll-down = pamixer -d 5
 

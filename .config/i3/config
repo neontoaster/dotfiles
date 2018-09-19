@@ -75,10 +75,12 @@ client.placeholder      #000000		#0c0c0c		#ffffff		#000000		#0c0c0c
 set $workspace1   "1:"
 set $workspace2   "2:"
 set $workspace3   "3:"
+#set $workspace7   "3:"
 set $workspace4   "4:"
 set $workspace5   "5:"
 set $workspace6   "6:"
-set $workspace7   "7:"
+set $workspace7   "7:"
+#set $workspace7   "7:"
 set $workspace8   "8:"
 set $workspace9   "9:"
 set $workspace10  "10:"
@@ -172,8 +174,8 @@ bindsym $mod+Control+Shift+Right resize grow width 5 px or 5 ppt
 
 
 ### program hotkeys ###
-bindsym $mod+y exec qutebrowser
-bindsym $mod+z exec qutebrowser
+bindsym $mod+y exec chromium
+bindsym $mod+z exec chromium
 bindsym $mod+x exec firefox
 bindsym $mod+c exec spotify
 bindsym $mod+n exec pcmanfm
@@ -194,8 +196,9 @@ exec --no-startup-id setxkbmap us
 ### locking ###
 set $Locker lock
 bindsym $mod+Control+l exec --no-startup-id $Locker
-exec_always --no-startup-id xautolock -detectsleep -time 5 -locker "$locker" -killtime 15 -killer "systemctl suspend"
-exec --no-startup-id xss-lock -- "$Locker"
+#exec_always --no-startup-id xautolock -detectsleep -time 5 -locker "$locker" -killtime 15 -killer "systemctl suspend"
+exec_always --no-startup-id xautolock -detectsleep -time 15 -locker "systemctl suspend"
+#exec --no-startup-id xss-lock -- "$Locker"
 
 
 ### sreen brightness controls ###
@@ -246,48 +249,59 @@ bindsym $mod+minus              exec --no-startup-id pamixer --allow-boost -d 5
 bindsym $mod+M                  exec --no-startup-id pamixer --allow-boost -t
 
 
-### autostart progs ###
+### autostart daemons ###
 exec --no-startup-id compton --xrender-sync-fence
-#exec --no-startup-id mpd
-exec --no-startup-id mopidy
-exec --no-startup-id dmenu --daemon
-# exec --no-startup-id xcompmgr -c -f -n
-exec --no-startup-id megasync
-exec --no-startup-id keepassxc
-exec --no-startup-id redshift
-# exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
+#exec --no-startup-id dmenu --daemon
+#exec --no-startup-id /usr/lib/notification-daemon-1.0/notification-daemon
+#exec --no-startup-id dunst
 exec --no-startup-id unclutter
-#exec --no-startup-id nm-applet
-exec --no-startup-id pasystray
-exec --no-startup-id ibus-daemon -drx
-exec_always --no-startup-id wal -R -g
+
+
+### autostart scripts ###
+exec_always --no-startup-id $HOME/.scripts/autostart
+exec_always --no-startup-id $HOME/.scripts/remaps
+exec_always --no-startup-id $HOME/.scripts/theme
+
+
+### autostart progs ###
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id conky -c $HOME/.config/polybar/empty_conky
-exec_always --no-startup-id syncthing
-
-
-
-### autorun scripts ###
-exec --no-startup-id lightsOn.sh
-exec_always --no-startus-id disable_accel
-#exec --no-startus-id vpn -l
-exec_always --no-startup-id binds
+exec --no-startup-id nextcloud
+exec --no-startup-id megasync
+exec --no-startup-id Desktop-Bridge
+exec --no-startup-id redshift-gtk
+exec --no-startup-id sudo protonvpn-cli -l
+exec --no-startup-id keepassxc
+#exec --no-startup-id pasystray
+#exec --no-startup-id nm-applet
+#exec --no-startup-id yubioath-desktop
 
 
 ### preconfigured application settings ####
-for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px; move position center
+for_window [window_role="GtkFileChooserDialog"] resize set 800 600
+for_window [window_role="GtkFileChooserDialog"] move position center
 for_window [class="qutebrowser"] move workspace $workspace2; workspace $workspace2
+for_window [class="Chromium"] move workspace $workspace2; workspace $workspace2
+for_window [class="google-chrome"] move workspace $workspace2; workspace $workspace2
+for_window [class="google-chrome-unstable"] move workspace $workspace2; workspace $workspace2
 for_window [class="Firefox"] move workspace $workspace2; workspace $workspace2
+for_window [class="discord"] move workspace $workspace6; workspace $workspace6
 for_window [class="Sublime_text"] move workspace $workspace3; workspace $workspace3
 for_window [class="Spotify"] move workspace $workspace4; workspace $workspace4
 for_window [class="Clementine"] move workspace $workspace4; workspace $workspace4
 for_window [title="mopidy-ncmpcpp"] floating enable
 for_window [class="Pcmanfm"] move workspace $workspace5; workspace $workspace5
+for_window [class="Thunderbird"] move workspace $workspace7; workspace $workspace7
 for_window [class="Lxappearance"] floating enable
+for_window [class="Lampe-gtk"] floating enable
 for_window [class="chromium"] enable border pixel 1
 for_window [class="URxvt"] border pixel 4
 for_window [class="Vlc"] floating enable border pixel 4
 for_window [title="floatingterm"] floating enable
+for_window [class="Yubico Authenticator"] floating enable; move position center
+for_window [class="Yubico Authenticator"] resize set 400 600
+for_window [title="popweather"] fullscreen enable
+
 
 ### i3-gaps stuff ###
 #smart_gaps on
